@@ -1,0 +1,36 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/YourContract.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.18 <0.9.0;\n\n/**\n * A smart contract that enables ksh to base eth onramping.\n * It also allows the owner to withdraw the Ether in the contract\n * Additionally, it has the functionality to log user details and retrieve them using a unique id.\n * @author EmmanuelHaggai\n */\ncontract YourContract {\n\taddress public delegate;\n\n\tfunction setDelegate(address _delegate) public isOwner {\n\t\tdelegate = _delegate;\n\t}\n\n\taddress public immutable owner;\n\n\tstring public greeting = \"Welcome to MQR Pay!\";\n\n\tstring public sktDetails = \"\";\n\n\tbool public premium = false;\n\tuint256 public totalCounter = 0;\n\n\tmapping(address => uint256) public userGreetingCounter;\n\n\tstruct BaseDetails {\n\t\tuint256 id;\n\t\tstring phoneNumber;\n\t\tstring baseName;\n\t\tstring baseAddress;\n\t}\n\n\tstruct Employee {\n\t\tuint256 employeeId;\n\t\tstring employeeName;\n\t\tstring employeePosition;\n\t}\n\n\tstruct Transaction {\n\t\tuint256 transactionId;\n\t\taddress from;\n\t\taddress to;\n\t\tuint256 amount;\n\t\tuint256 timestamp;\n\t}\n\n\tmapping(uint256 => BaseDetails) private baseDetailsMap;\n\tmapping(uint256 => Employee) private employees;\n\tmapping(uint256 => Transaction) private transactions;\n\n\tevent StkInit(address indexed StkInitializer, string sktDetails);\n\n\tevent GreetingChange(\n\t\taddress indexed greetingSetter,\n\t\tstring newGreeting,\n\t\tbool premium,\n\t\tuint256 value\n\t);\n\n\tevent BaseDetailsLogged(\n\t\tuint256 indexed id,\n\t\tstring phoneNumber,\n\t\tstring baseName,\n\t\tstring baseAddress\n\t);\n\tevent EmployeeAdded(\n\t\tuint256 employeeId,\n\t\tstring employeeName,\n\t\tstring employeePosition\n\t);\n\tevent TransactionLogged(\n\t\tuint256 indexed transactionId,\n\t\taddress from,\n\t\taddress to,\n\t\tuint256 amount,\n\t\tuint256 timestamp\n\t);\n\n\tevent EtherForwarded(\n\t\taddress indexed _from,\n\t\taddress indexed _to,\n\t\tuint256 _amount\n\t);\n\n\tconstructor(address _owner) {\n\t\towner = _owner;\n\t}\n\n\tmodifier isOwner() {\n\t\trequire(msg.sender == owner, \"Not the Owner\");\n\t\t_;\n\t}\n\n\tfunction InitializeStk(string memory _sktDetails) public payable {\n\t\tsktDetails = _sktDetails;\n\n\t\temit StkInit(msg.sender, _sktDetails);\n\t}\n\n\tfunction forwardEther(address payable _to) public payable {\n\t\trequire(msg.value > 0, \"No Ether sent to forward\");\n\n\t\tuint256 amount = msg.value;\n\n\t\t(bool sent, ) = _to.call{ value: amount }(\"\");\n\t\trequire(sent, \"Failed to forward Ether\");\n\n\t\temit EtherForwarded(msg.sender, _to, amount);\n\t}\n\n\tfunction withdraw() public isOwner {\n\t\t(bool success, ) = owner.call{ value: address(this).balance }(\"\");\n\t\trequire(success, \"Failed to send Ether\");\n\t}\n\n\tfunction logBaseDetails(\n\t\tuint256 _id,\n\t\tstring memory _phoneNumber,\n\t\tstring memory _baseName,\n\t\tstring memory _baseAddress\n\t) public {\n\t\tbaseDetailsMap[_id] = BaseDetails(\n\t\t\t_id,\n\t\t\t_phoneNumber,\n\t\t\t_baseName,\n\t\t\t_baseAddress\n\t\t);\n\t\temit BaseDetailsLogged(_id, _phoneNumber, _baseName, _baseAddress);\n\t}\n\n\tfunction getBaseDetails(\n\t\tuint256 _id\n\t)\n\t\tpublic\n\t\tview\n\t\treturns (uint256, string memory, string memory, string memory)\n\t{\n\t\tBaseDetails memory details = baseDetailsMap[_id];\n\t\treturn (\n\t\t\tdetails.id,\n\t\t\tdetails.phoneNumber,\n\t\t\tdetails.baseName,\n\t\t\tdetails.baseAddress\n\t\t);\n\t}\n\n\tfunction addEmployee(\n\t\tuint256 _employeeId,\n\t\tstring memory _employeeName,\n\t\tstring memory _employeePosition\n\t) public isOwner {\n\t\temployees[_employeeId] = Employee(\n\t\t\t_employeeId,\n\t\t\t_employeeName,\n\t\t\t_employeePosition\n\t\t);\n\t\temit EmployeeAdded(_employeeId, _employeeName, _employeePosition);\n\t}\n\n\tfunction getEmployee(\n\t\tuint256 _employeeId\n\t) public view returns (uint256, string memory, string memory) {\n\t\tEmployee memory employee = employees[_employeeId];\n\t\treturn (\n\t\t\temployee.employeeId,\n\t\t\temployee.employeeName,\n\t\t\temployee.employeePosition\n\t\t);\n\t}\n\n\tfunction setGreeting(string memory _newGreeting) public payable {\n\t\tgreeting = _newGreeting;\n\t\ttotalCounter += 1;\n\t\tuserGreetingCounter[msg.sender] += 1;\n\n\t\tif (msg.value > 0) {\n\t\t\tpremium = true;\n\t\t} else {\n\t\t\tpremium = false;\n\t\t}\n\n\t\temit GreetingChange(msg.sender, _newGreeting, msg.value > 0, msg.value);\n\t}\n\n\tfunction logTransaction(\n\t\tuint256 _transactionId,\n\t\taddress _from,\n\t\taddress _to,\n\t\tuint256 _amount\n\t) public {\n\t\ttransactions[_transactionId] = Transaction(\n\t\t\t_transactionId,\n\t\t\t_from,\n\t\t\t_to,\n\t\t\t_amount,\n\t\t\tblock.timestamp\n\t\t);\n\t\temit TransactionLogged(\n\t\t\t_transactionId,\n\t\t\t_from,\n\t\t\t_to,\n\t\t\t_amount,\n\t\t\tblock.timestamp\n\t\t);\n\t}\n\n\tfunction getTransaction(\n\t\tuint256 _transactionId\n\t) public view returns (uint256, address, address, uint256, uint256) {\n\t\tTransaction memory transaction = transactions[_transactionId];\n\t\treturn (\n\t\t\ttransaction.transactionId,\n\t\t\ttransaction.from,\n\t\t\ttransaction.to,\n\t\t\ttransaction.amount,\n\t\t\ttransaction.timestamp\n\t\t);\n\t}\n\n\treceive() external payable {}\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

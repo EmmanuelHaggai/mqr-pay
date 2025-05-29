@@ -1,0 +1,6 @@
+/* Swap.module.css */
+.swapContainer {
+    display: block !important; /* Override flex */
+    width: 100% !important; /* Override w-[500px] */
+  }
+  

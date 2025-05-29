@@ -1,0 +1,6306 @@
+/*--------- Body Start -------*/
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+body, html {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 23px;
+	color: #797979;
+	overflow-x:hidden;
+	
+}
+body::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #ffffff;
+}
+body::-webkit-scrollbar{
+	width: 6px;
+	background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color: #4169E1;
+}
+/*---------- Custom Css Start -------*/
+a {
+	color: #797979;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #707070;
+	text-decoration: none;
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.1;
+	font-weight:400;
+	color: #222222;
+	margin:0;
+	padding:0;
+}
+input, select, button, textarea {
+	outline: none;
+}
+input:focus, select:focus, button:focus, textarea:focus {
+	outline: none;
+	box-shadow:none;
+}
+ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+/*-- Preloader css start --*/
+#preloader {
+	background-color: #fff;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 2147483647;
+	width: 100%;
+	height: 100%;
+}
+#status {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+#status img {
+}
+/*-- btc top header wrapper Start --*/
+.btc_top_header_main_wrapper{
+	float:left;
+	width:100%;
+	background:#222222;
+}
+.btc_left_top_header_wrapper{
+	float:left;
+	width:60%;
+}
+.btc_right_top_header_wrapper{
+	float:left;
+	width:40%;
+}
+.btc_left_top_header_wrapper p{
+	font-size:14px;
+	margin:0;
+	padding:20px 30px 20px 0;
+	color:rgba(255, 255, 255, 0.7294117647058823);
+	display:inline-block;
+	float:left;
+}
+/*-- btc bit coin timer start --*/
+#day_and_time {
+  position: relative;
+  border-spacing: 0px;
+  padding: 0;
+  margin: 0;
+}
+#ticker_window {
+ background:rgba(255, 255, 255, 0.14901960784313725);
+ display:inline-block;
+ float:left;
+ padding-left: 30px;
+ position:relative;
+}
+#ticker {
+  width: 350px;
+  max-height: 63px;
+  overflow: hidden;
+  list-style: none;
+  font-size: 0.95rem;
+  direction: rtl;
+  overflow-x:hidden;
+  display: inline-block;
+      position: absolute;
+    top: 0;
+}
+#ticker::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: rgba(255, 255, 255, 0.14901960784313725);
+}
+#ticker::-webkit-scrollbar{
+	width: 6px;
+	background-color: #ffffff26;
+}
+
+#ticker::-webkit-scrollbar-thumb{
+	background-color: #ffffff;
+}
+.tick {
+  margin: auto;
+  text-align: center;
+}
+#ticker li {
+  width: 175px;
+  list-style-type: none;
+  text-align: center;
+  float:left;
+}
+#ticker li.sell {
+  background-color: rgb(105, 199, 115);
+  float:left;
+  padding-left:18px;
+}
+#ticker li.buy {
+  background-color: rgb(199, 105, 105);
+  float:left;
+  padding-left:18px;
+}
+#day_and_time p{
+	padding-right:10px;
+}
+#clock{
+	padding-right:30px !important;
+}
+.btc_right_top_header_wrapper ul{
+	float:right;
+}
+.btc_right_top_header_wrapper li{
+	float:left;
+	padding:20px 0 20px 0;
+	color:rgba(255, 255, 255, 0.7294117647058823);
+	position:relative;
+}
+.btc_right_top_header_wrapper li i:before{
+	font-size:16px;
+	padding-right:5px;
+}
+.btc_right_top_header_wrapper li:nth-child(2){
+	padding:0;
+	position:relative;
+}
+.btc_right_top_header_wrapper li:nth-child(2):after{
+	content:'';
+	border:1px solid rgba(255, 255, 255, 0.3215686274509804);
+	width:1px;
+	height:15px;
+	position:absolute;
+	right:0;
+	top:25px;
+	
+}
+.btc_right_top_header_wrapper li:nth-child(2):before{
+	content:'';
+	border:1px solid rgba(255, 255, 255, 0.3215686274509804);
+	width:1px;
+	height:15px;
+	position:absolute;
+	left:25px;
+	top:25px;
+	
+}
+.btc_right_top_header_wrapper li a{
+	float:left;
+	padding:20px 30px 20px 30px;
+	color:rgba(255, 255, 255, 0.7294117647058823);
+	    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_right_top_header_wrapper li a:hover{
+	color:#4169E1;
+	    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_right_top_header_wrapper ul li:last-child p{
+	float:left;
+	width:auto;
+    margin: 0;
+}
+.btc_right_top_header_wrapper ul li:last-child p span{
+	color: rgba(255, 255, 255, 0.7294117647058823);
+    position: relative;
+    margin-left: 5px;
+	cursor:pointer;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btc_right_top_header_wrapper ul li:last-child:hover p span{
+	color:#4169E1;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btc_right_top_header_wrapper ul li:last-child i{
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btc_right_top_header_wrapper ul li:last-child:hover i{
+	color:#4169E1;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btc_right_top_header_wrapper ul li:last-child p span img{
+	margin-left:2px;
+}
+.btc_right_top_header_wrapper ul li:last-child p span i{
+    font-size: 18px;
+	padding-left:5px;
+	color:#dedede;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btc_right_top_header_wrapper ul li:last-child:hover p span i{
+	-webkit-transform: scaleY(-1);
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	transform: scaleY(-1);
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btc_right_top_header_wrapper ul li:last-child .ss_opener{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    background-color: #111111;
+    border-radius: 3px;
+	opacity:0;
+	visibility:hidden;
+    z-index: 1;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btc_right_top_header_wrapper ul li:last-child .ss_opener span{
+	float:left;
+	width:100%;
+	color:#ffffff;
+	padding:8px 15px;
+	cursor:pointer;
+	margin-bottom:1px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btc_right_top_header_wrapper ul li:last-child .ss_opener span:hover{
+	background-color:#333333;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btc_right_top_header_wrapper ul li:last-child .ss_opener span:last-child{
+	margin-bottom:0px;
+}
+.btc_right_top_header_wrapper ul li:last-child:hover .ss_opener{
+	top:100%;
+	opacity:1;
+	z-index: 1000;
+	visibility:visible;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+/*-- btc bit coin timer End --*/
+/*-- btc top header wrapper End --*/
+/*-- btc navigation wrapper Start --*/
+/*-- Header Css Start --*/	
+.gc_header_wrapper{
+    float: left;
+    width: 100%;
+	text-align:center;
+}
+.gc_logo{
+    float: left;
+    width: auto;
+}
+.gc_logo img{
+	display:inline-block;
+}
+.header-area{
+	float:left;
+	width:100%;
+}
+
+.header-area {
+	padding-top: 10px;
+    width: 100%;
+    z-index: 9999;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.logo a {
+    color: #fff;
+    display: inline-block;
+}
+.logo a h2 {
+    display: inline-block;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.logo a h2 span {
+    background-color: #fff;
+    color: #222;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.gc_main_menu_wrapper{
+	float:left;
+	width:100%;
+	padding-top: 25px;
+	position: relative;
+}
+.menu-bar {
+    cursor: pointer;
+    position: relative;
+    right: 15px;
+    z-index: 9;
+    height: 42px;
+    display: block;
+    float: right;
+    margin-top: 15px;
+}
+.menu-bar span {
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    margin-bottom: 6px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 30px;
+}
+.mainmenu {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    padding-right: 15px;
+    position: absolute;
+    right: -50%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+}
+.mainmenu.menu-open {
+    position: relative;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 15px;
+    visibility: visible;
+}
+.mainmenu ul li {
+    display: inline-block;
+    position: relative;
+}
+.mainmenu ul li a {
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 20px 47px 10px;
+    position: relative;
+}
+.mainmenu ul li:hover .gc_main_navigation,
+.mainmenu ul li.active > .gc_main_navigation {
+    opacity: 1;
+   
+	color:#4169E1 !important;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: transparent;
+}
+.menu-bar:after,
+.menu-bar:before {
+    background-color: #fff;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 30px;
+}
+.menu-bar.menu-close:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.menu-bar.menu-close:before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.menu-bar.menu-close span {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+/*************************
+02.1 Submenu & Megamenu
+*************************/
+
+.mainmenu ul ul,
+.mainmenu ul li .mega-menu {
+    border: 1px solid #eee;
+    width: 220px;
+    position: absolute;
+    text-align: left;
+    background-color: #fff;
+    top: calc(100% + 30px);
+    z-index: 9999999;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
+}
+.mainmenu > ul > li:last-child > ul {
+    right: 0;
+}
+.mainmenu ul li:hover > ul,
+.mainmenu ul li:hover > .mega-menu {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    top: 100%;
+	border-top: 2px solid #4169E1;
+	-o-box-shadow: 0px 0px 25px -10px;
+    -ms-box-shadow: 0px 0px 25px -10px;
+    -moz-box-shadow: 0px 0px 25px -10px;
+    -webkit-box-shadow: 0px 0px 25px -10px;
+    box-shadow: 0px 0px 25px -10px;
+}
+.mainmenu ul ul li {
+    display: block;
+}
+.mainmenu ul ul li a,
+.mainmenu ul li.has-mega .mega-menu span a {
+    color: #222;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 8px 10px 8px 20px;
+    border-bottom: 1px solid #eee;
+}
+.mainmenu ul li.has-mega .mega-menu span a:hover{
+	background-color: #00468c;
+	color:#ffffff !important;
+}
+.mainmenu ul ul li:last-child > a {
+    border-bottom: 0px;
+}
+.mainmenu ul ul li:hover > a {
+    background-color: #4169E1;
+    padding-left: 23px;
+	color:#ffffff !important;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.mainmenu ul ul li a:after {
+    content: "";
+}
+.mainmenu ul ul li > ul {
+    left: -100%;
+    top: 50%;
+    -webkit-transform-origin: 100% 50% 0;
+    transform-origin: 100% 50% 0;
+}
+.mainmenu ul ul li:hover > ul {
+    top: 20%;
+}
+.mainmenu ul li.has-mega {
+    position: static;
+}
+.mainmenu ul li.has-mega .mega-menu {
+    width: 100%;
+    left: 0;
+    padding: 20px 0px;
+}
+.mainmenu ul li.has-mega .mega-menu span {
+    width: 25%;
+    float: left;
+    border-left: 1px solid #eee;
+}
+.mainmenu ul li.has-mega .mega-menu span a {
+    padding-left: 20px;
+    padding-right: 0px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.mainmenu ul li.has-mega .mega-menu span a:last-child {
+    border-bottom: 0px;
+}
+.mainmenu ul li.has-mega .mega-menu span a:hover {
+    padding-left: 3px;
+	padding-left: 20px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.mainmenu ul li span a.active {
+    font-weight: 600;
+}
+.mainmenu ul ul li.active > a {
+    background-color: #eee;
+    font-weight: 600;
+}
+.mainmenu .gc_main_navigation.parent:after,
+.mainmenu ul li.has-mega > a:after {
+    content: "";
+    width: 11px;
+    height: 1px;
+    background-color: #4169E1 !important;
+    top: 20px;
+    position: absolute;
+	left:0;
+    right: 0;
+	margin:0px auto;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.mainmenu .gc_main_navigation.parent:after,
+.mainmenu ul li.has-mega a:after {
+    width: 0px;
+    top: 55%;
+}
+.mainmenu .gc_main_navigation.parent:hover:after,
+.mainmenu ul li.has-mega:hover > a:after {
+    width: 30px;
+    top: 55%;
+}
+/*************************
+02.2 Sticky menu
+*************************/
+
+.menu_fixed{
+	position:fixed;
+	background:#ffffff;
+	-webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow:  0px 1px 20px 0px rgba(0, 0, 0, 0.10);
+    -o-box-shadow:  0px 1px 20px 0px rgba(0, 0, 0, 0.10);
+    -ms-box-shadow:  0px 1px 20px 0px rgba(0, 0, 0, 0.10);
+    box-shadow:  0px 1px 20px 0px rgba(0, 0, 0, 0.10);
+	z-index:1000;
+	left:0;
+	right:0;
+}
+.header-area.stick .logo a {
+    color: #222;
+    margin-top: 2px;
+    position: relative;
+    z-index: 9999999;
+}
+.header-area.stick .logo a h2 span {
+    background-color: #222;
+    color: #fff;
+}
+.header-area.stick .mainmenu ul li a,
+.stick .mean-container a.meanmenu-reveal {
+    color: #000000;
+}
+
+.header-area.stick .menu-bar:after,
+.header-area.stick .menu-bar:before,
+.header-area.stick .menu-bar span,
+.stick .mainmenu ul li.parent:after,
+.stick .mainmenu ul li.parent:before,
+.stick .mainmenu ul li.has-mega > a:before,
+.stick .mainmenu ul li.has-mega > a:after,
+.stick .mean-container a.meanmenu-reveal span {
+    background-color: #222;
+}
+/*************************
+02.3 Hidden menu bar
+*************************/
+
+.hidden-menu-bar .mainmenu {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 0;
+    visibility: visible;
+    padding-right: 0;
+    position: relative;
+	z-index:10;
+	float:right;
+}
+/*************************
+02.4 Onepage side menu
+*************************/
+
+.left-side-wrapper {
+    background-color: #222;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 15%;
+    z-index: 99;
+}
+.left-side-wrapper .logo {
+    text-align: center;
+}
+.left-side-wrapper .mainmenu ul li {
+    display: block;
+}
+.left-side-wrapper .mainmenu ul li a {} .left-side-wrapper .mainmenu {
+    margin-top: 50px;
+    position: relative;
+}
+.left-side-wrapper .mainmenu ul li > a:after,
+.left-side-wrapper .mainmenu ul li.active > a:after {
+    bottom: -5px;
+    left: 20px;
+    right: auto;
+}
+.right-side-wrapper {
+    margin-left: 15%;
+    width: 85%;
+}
+.right-side-wrapper .container-fluid {
+    padding: 0% 10%;
+}
+.right-side-wrapper .container-fluid .single-project-item {
+    height: 370px;
+}
+.right-side-wrapper .container-fluid .single-project-item.large {
+    height: 460px;
+}
+/*************************
+02.5 Onepage Menu
+*************************/
+
+.mainmenu.one-page-menu ul li a {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.mainmenu.one-page-menu ul li:hover a:after,
+.mainmenu.one-page-menu ul li.active a:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    width: 90%;
+}
+.mainmenu.one-page-menu ul li a:after {
+    width: 0%;
+    height: 1px;
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    margin-top: -5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.stick .mainmenu.one-page-menu ul li a:after {
+    background-color: #222;
+}
+/*************************
+02.6 Mobile Menu
+*************************/
+
+.slicknav_menu {
+    display: none;
+}
+.gc_right_menu{
+	float:right;
+	width:auto;
+    margin-top: 9px;
+}
+.gc_right_menu > ul{
+	float:left;
+	width:auto;
+	margin:0px;
+	padding:0px;
+}
+.gc_right_menu > ul > li{
+	float:left;
+	width:auto;
+	list-style:none;
+	margin-right:10px;
+	position:relative;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gc_right_menu ul > li:last-child{
+	margin-right:0px;
+}
+.gc_right_menu ul > li .gc_btn{
+	background-color:#00468c;
+    border: 2px solid #00468c;
+	color:#ffffff;
+}
+.gc_right_menu > ul > li .gc_btn:hover{
+	background-color:#ffffff;
+    border: 2px solid #00468c;
+	color:#00468c;
+}
+.gc_right_menu > ul > li > svg{
+	width: 36px;
+    height: 36px;
+    padding-top: 13px;
+    cursor: pointer;
+	margin-top: -10px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gc_right_menu > ul > li svg:hover #share, .gc_right_menu > ul > li > svg:hover #search, .gc_right_menu > ul > li > svg:hover .menubar{
+	fill:#4169E1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gc_right_menu > ul > li:hover .gc_share_box{
+	top:150%;
+	opacity:1;
+	visibility:visible;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gc_right_menu > ul > li .gc_share_box{
+	position:absolute;
+	top:80%;
+	left:0;
+	width:50px;
+	border:1px solid #00468c;
+	border-radius:3px;
+	background-color:#ffffff;
+	opacity:0;
+	visibility:hidden;
+	z-index:1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gc_right_menu > ul > li .gc_share_box:after{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #00468c;
+}
+.gc_right_menu > ul > li .gc_share_box > ul{
+	float:left;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.gc_right_menu > ul > li .gc_share_box > ul > li{
+	float:left;
+	width:100%;
+	list-style:none;
+	border-bottom:1px solid #e1e1e1;
+	text-align: center;
+}
+.gc_right_menu > ul > li .gc_share_box > ul > li:last-child{
+	border-bottom:0px;
+}
+.gc_right_menu > ul > li .gc_share_box > ul > li > a{
+	float:left;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-size:22px;
+	color:#00468c;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gc_right_menu > ul > li .gc_share_box > ul > li > a:hover{
+	background-color:#e5ae49;
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gc_search_box{
+    position: absolute;
+    right: 0px;
+    bottom:0;
+    padding: 0px;
+    width: 100%;
+    display: inline-block;
+    border-radius: 0px;
+    background-color: #ffffff;
+    display: none;
+    z-index: 1000;
+}
+.gc_search_box input{
+    float: left;
+    width: calc(100% - 60px);
+    padding: 0px 10px;
+    height: 120px;
+    border: 1px solid #e1e1e1;
+    border-right: 0px;
+	font-size:30px;
+	color:#000000;
+}
+.gc_search_box button{
+    width: 60px;
+    height: 120px;
+	color:#000000;
+    border: 1px solid #e1e1e1;
+    border-left: none;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0px;
+	font-size:24px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.menu_fixed{
+	position: fixed;
+	z-index:1000;
+	padding:0px 0px;
+    top: 0;
+	padding-top: 25px;
+	background-color:#ffffff;
+	-o-box-shadow:0px 0px 25px -10px;
+	-ms-box-shadow:0px 0px 25px -10px;
+	-moz-box-shadow:0px 0px 25px -10px;
+	-webkit-box-shadow:0px 0px 25px -10px;
+	box-shadow:0px 0px 25px -10px;
+}
+/*-- Button Css Start --*/
+.gc_btn{
+    display: inline-block;
+	width:auto;
+	height:50px;
+	line-height:49px;
+	font-size:16px;
+	color:#111111;
+	text-transform:uppercase;
+    font-weight: normal;
+	background-color: #ffffff;
+	text-align:center;
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+	border:2px solid #e1e1e1;
+    padding: 0px 30px;
+	font-family: 'Droid Serif', serif;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gc_btn:hover{
+	color:#ffffff;
+	background-color:#e5ae49;
+	border:2px solid #e5ae49;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/*-- Heading Css Start --*/
+.gc_heading{
+	float:left;
+	width:100%;
+	margin-bottom:60px;
+	text-align:center;
+	text-transform:uppercase;
+}
+.gc_heading h1{
+	float:left;
+	width:100%;
+	margin:10px 0px;
+	font-size:36px;
+	color:#00468c;
+	font-family: 'Lora', serif;
+}
+.gc_heading h2{
+	float:left;
+	width:100%;
+	margin:0px;
+	font-size:30px;
+	color:#e5ae49;
+	font-family: 'Great Vibes', cursive;
+}
+.btc_join_navi_btn{
+	margin-top:-12px;
+}
+.btc_join_navi_btn a{
+	float:left;
+	width:150px;
+	height:50px;
+	background:#4169E1;
+	color:#ffffff;
+	text-align:center;
+	line-height:46px;
+	border:1px solid transparent;
+	    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btc_join_navi_btn a:hover{
+	background:transparent;
+	border:1px solid #4169E1;
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.rp_mobail_menu_main_wrapper{
+	float:none;
+	width:100%;
+}
+#sidebar {
+  position: fixed;
+  display: block;
+  height: 100%;
+  top: 0px;
+  left: -500px;
+  background-color: #ffffff;
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index:1000;
+}
+
+#links {
+  position: relative;
+  float: left;
+}
+
+#link_list {
+  list-style-type: none;
+  width: 100%;
+  padding: 0px 50px 0px 0px;
+}
+
+#link_list li {
+  display: block;
+  width: 100%;
+
+}
+
+#link_list li:hover {
+  background-color: #e74c3c;
+}
+
+#toggle {
+  float: right;
+  position: relative;
+  bottom: 17px;
+  right: 0;
+  border-radius: 20px;
+  text-align: center;
+  cursor:pointer;
+}
+#toggle_close{
+	    position: absolute;
+    z-index: 100;
+    right: 20px;
+    top: 15px;
+    font-size: 25px;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu {
+  width: 300px;
+  font-family: Raleway, sans-serif;
+  color: #ffffff;
+}
+#cssmenu ul ul {
+  display: none;
+}
+#cssmenu > ul > li.active > ul {
+  display: block;
+}
+.align-right {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 16px 22px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+  font-weight:bold;
+  border-bottom:1px solid #d3d3d3;
+  background: #ffffff;
+   -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#cssmenu > ul > li:first-child > a{
+	border-top:1px solid #d3d3d3;
+}
+#cssmenu > ul > li > a:hover{
+	background:#4169E1;
+	border-bottom:1px solid #d3d3d3;
+	color:#ffffff;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#cssmenu ul > li.has-sub > a:after {
+  position: absolute;
+  right: 26px;
+  top: 19px;
+  z-index: 5;
+  display: block;
+  height: 10px;
+  width: 2px;
+  background: #000000;
+  content: "";
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+   -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#cssmenu ul > li.has-sub > a:before {
+  position: absolute;
+  right: 22px;
+  top: 23px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: #000000;
+  content: "";
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+   -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#cssmenu ul > li.has-sub > a:hover:after, #cssmenu ul > li.has-sub > a:hover:before{
+	background:#ffffff;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#cssmenu ul > li.has-sub.open > a:after,
+#cssmenu ul > li.has-sub.open > a:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#cssmenu ul ul li a {
+  padding: 14px 22px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight:bold;
+  background: #49505a;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu ul ul ul li a {
+  padding-left: 32px;
+}
+#cssmenu ul ul li a:hover {
+  color: #ffffff;
+}
+#cssmenu ul ul > li.has-sub > a:after {
+  top: 16px;
+  right: 26px;
+  background:#ffffff;
+}
+#cssmenu ul ul > li.has-sub > a:before {
+  top: 20px;
+  background:#ffffff;
+}
+.menu_fixed{
+	position:fixed !important;
+	left:0 !important;
+	right:0 !important;
+	top:0 !important;
+	z-index: 1000;
+}
+#sidebar h1 a{
+	font-size:20px;
+	color:#000000 !important;
+	padding-left: 20px;
+	font-weight:bold;
+}
+#sidebar h1{
+	margin:0;
+	color:#000000;
+	padding-bottom: 15px;
+	background:#f9f9f9;
+	position:relative;
+}
+#sidebar h1:after {
+    content: '';
+    border: 1px solid #4169E1;
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    left: 20px;
+    bottom: 12px;
+}
+/*-- btc navigation wrapper End --*/
+/*-- CC slider Wrapper Start --*/
+.btc_main_slider_main_wrapper{
+	float:left;
+	width:100%;
+}
+.bullet-bar.tp-bullets{}.bullet-bar.tp-bullets:before{content:" ";position:absolute;width:100%;height:100%;background:transparent;padding:10px;margin-left:-10px;margin-top:-10px;box-sizing:content-box}.bullet-bar .tp-bullet{width:40px;height:3px;position:absolute;background:#4169E1;  background:rgba(204,204,204,0.5);cursor:pointer;box-sizing:content-box}.bullet-bar .tp-bullet:hover,.bullet-bar .tp-bullet.selected{background:#4169E1}.bullet-bar .tp-bullet-image{}.bullet-bar .tp-bullet-title{}
+.tiny_bullet_slider .tp-bullet:before{content:" ";  position:absolute;  width:100%;  height:25px;  top:-12px;  left:0px;  background:transparent}
+.btc_slider_left_border{
+	position:relative;
+}
+.btc_slider_left_border:before{
+	content: '';
+    border: 4px solid #4169E1;
+    width: 1px;
+    height: 119px;
+    position: absolute;
+    left: -28px;
+    top: 0;
+}
+.btc_slider_left_border:after{
+	content: '';
+    border: 6px solid rgba(255, 255, 255, 0.3411764705882353);
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: -108px;
+    top: -65px;
+    border-right: 0;
+}
+.btc_slider_second_left_border:before{
+	display:none;
+}
+.btc_slider_third_left_border:after{
+	display:none;
+}
+.btc_slider_third_left_border:before{
+	left:100%;
+	margin-left: 20px;
+}
+/*-- RS slider Wrapper Esnd --*/
+/*-- Testimonial css Start --*/
+.btc_testimonial_wrapper{
+	float:left;
+	width:100%;
+	background:#f9f9f9;
+	padding-top:90px;
+	padding-bottom:90px;
+}
+.btc_testimonial_wrapper .lv_heading_center h1 {
+    color: #ffffff;
+}
+.btc_testimonial_info{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+/* Carousel */
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+#quote-carousel .carousel-control {
+	display:none;
+}
+#quote-carousel .carousel-indicators {
+    position:relative !important;
+	left:0 !important;
+	margin-left:0 !important;
+	top: 8px;
+}
+
+#quote-carousel .carousel-indicators:before{
+	content: '';
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    right: -7px;
+    bottom: 13px;
+    -ms-transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+#quote-carousel .carousel-indicators:after{
+	content: '';
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    right: -7px;
+    bottom: 23px;
+    ms-transform: rotate(311deg);
+    -webkit-transform: rotate(311deg);
+    transform: rotate(311deg);
+}
+.btc_center_line{
+	position:relative;
+}
+.btc_center_line:after{
+	content: '';
+    position: absolute;
+    border: 1px solid #f9f9f9;
+    width: 1px;
+    height: 20px;
+    left: 0;
+    top:71px;
+}
+.btc_center_line:before{
+	    content: '';
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 160px;
+    left: 0;
+}
+#quote-carousel .carousel-indicators li {
+    width: 83px;
+    height: 83px;
+    margin: 5px;
+    cursor: pointer;
+	border: 3px solid transparent;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators li  img{
+	border-radius:100%;
+	margin: 0px;
+    display: block;
+}
+#quote-carousel .carousel-indicators .active {
+    background: transparent;
+    width: 83px;
+    height: 83px;
+    border-radius: 100px;
+	border: 3px solid #4169E1;
+    opacity: 1;
+    overflow: hidden;
+}
+.btc_testimonial_info .carousel-inner > .item p{
+	float:left;
+	width:100%;
+	font-size:16px;
+    font-weight: 300;
+	color:#000000;
+	text-align:left;
+}
+.btc_testimonial_info .carousel-inner > .item h1{
+	float:left;
+	font-size:14px;
+	color:#000000;
+    font-weight: bold;
+	text-transform:uppercase;
+	padding-top:30px;
+	font-family: 'Lato', sans-serif;
+	text-align:left;
+}
+.btc_testimonial_info .carousel-inner > .item small{
+	float:left;
+	width:100%;
+}
+.carousel-indicators{
+	float:left;
+	width:40%;
+}
+.carousel-inner{
+	float:left;
+	width:calc(100% - 40%);
+	position:relative;
+}
+.btc_testi_quote_wrapper1{
+	position:relative;
+}
+.btc_testi_quote_wrapper1:after{
+	content:'';
+	border:1px solid #4169E1;
+	background:#4169E1;
+	width:12px;
+	height:25px;
+	position:absolute;
+	left:-65px;
+	top: 7px;
+}
+.btc_testi_quote_wrapper1:before{
+	content: '';
+    border-left: 12px solid transparent;
+    border-top: 12px solid #f9f9f9;
+    position: absolute;
+    left: -65px;
+    top: 6px;
+    z-index: 1;
+}
+.btc_testi_quote_wrapper2{
+	position:relative;
+}
+.btc_testi_quote_wrapper2:after{
+	content:'';
+	border:1px solid #4169E1;
+	background:#4169E1;
+	width:12px;
+	height:25px;
+	position:absolute;
+	left:-45px;
+	top: 7px;
+}
+.btc_testi_quote_wrapper2:before{
+	content: '';
+    border-left: 12px solid transparent;
+    border-top: 12px solid #f9f9f9;
+    position: absolute;
+    left: -45px;
+    top: 6px;
+    z-index: 1;
+}
+.btc_testi_cont_bottom_line{
+	position:relative;
+	float: left;
+    width: 100%;
+}
+.btc_testi_cont_bottom_line:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:40px;
+	position:absolute;
+	bottom:-10px;
+	left:0;
+}
+/*-- Testimonial css End --*/
+/*-- btc steps Wrapper Start --*/
+.btc_steps_main_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_steps_heading_wrapper{
+	float:left;
+	width:100%;
+	display:inline-block;
+}
+.btc_steps_heading_wrapper p{
+	font-size:14px;
+	color:#4169E1;
+}
+.btc_steps_heading_wrapper h1{
+	font-size:36px;
+	color:#222222;
+	padding-bottom:10px;
+}
+.btc_steps_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_steps_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_steps_heading_wrapper span:before{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	right: 20px;
+    top: 13px;
+}
+.btc_steps_heading_wrapper h5{
+	font-size:16px;
+	font-family: 'Lato', sans-serif;
+	color:#797979;
+	line-height:20px;
+	padding-top:20px;
+}
+.nav-pills{
+	display:inline-block;
+	margin-top:60px;
+}
+.nav > li > a {
+	padding:0;
+	font-size:16px;
+	font-weight:bold;
+    float: left;
+    width: 250px;
+    height: 50px;
+	text-transform:uppercase;
+	border:2px solid #efefef;
+	background:#ffffff;
+	color:#000000;
+    line-height: 45px;
+	  -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	z-index:10;
+}
+.nav-pills > li > a:hover{
+	background:#4169E1;
+	color:#ffffff; 
+	border:2px solid transparent;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.nav-pills > li > a:hover:after{
+	content:'';
+	border-left:12px solid transparent;
+	border-right:12px solid transparent;
+	border-top:12px solid #4169E1;
+	position:absolute;
+	bottom: -12px;
+    left: 96px;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+	background:#4169E1;
+	position:relative;
+	border:2px solid transparent;
+}
+.nav-pills > li.active > a:after{
+	content:'';
+	border-left:12px solid transparent;
+	border-right:12px solid transparent;
+	border-top:12px solid #4169E1;
+	position:absolute;
+	bottom: -12px;
+    left: 96px;
+}
+.nav-pills > li + li {
+    margin-left: 15px;
+}
+.tab-content{
+	margin-top:70px;
+}
+.btc_steps_main_box_wrapper{
+	float:left;
+	width:100%;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_step_icon_wrapper{
+	display:inline-block;
+	 -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	border:2px dashed transparent;
+	padding: 10px;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_step_hover_effect{
+	position:relative;
+	float:left;
+	width:100%;
+}
+.btc_step_overlay{
+	position:absolute;
+	left:50%;
+	right:50%;
+	top:50%;
+	bottom:50%;
+	opacity:0;
+	padding:10px;
+	 -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_steps_main_box_wrapper:hover .btc_step_overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:#4169E1;
+	opacity:1;
+}
+.btc_step_hover_effect i{
+	width:125px;
+	height:125px;
+	background:#f9f9f9;
+	text-align:center;
+	line-height:125px;
+	float:left;
+	-webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_step_hover_effect i:before{
+	font-size:45px;
+	margin-left:0;
+	color:#000000;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_step_icon_cont_wrapper{
+	float:left;
+	width:100%;
+	padding-top:30px;
+	display:inline-block;
+}
+.btc_step_icon_cont_wrapper h2{
+	padding-bottom:30px;
+}
+.btc_step_icon_cont_wrapper h2 a{
+	font-size:20px;
+	color:#000000;
+	font-weight:bold;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_step_icon_cont_wrapper h2 a:hover{
+	color:#4169E1;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_step_icon_cont_wrapper p{
+	padding-bottom:20px;
+}
+.btc_step_icon_cont_wrapper h4 a{
+	font-size:16px;
+	font-weight:bold;
+	color:#4169E1;
+	text-transform:uppercase;
+	margin-top:20px;
+	font-family: 'Lato', sans-serif;
+}
+.btc_step_icon_cont_wrapper span{
+	width: 45px;
+    height: 45px;
+    line-height: 28px;
+    text-align: center;
+    background: #222222;
+    color: #ffffff;
+    border: 8px solid #fff;
+	-webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	display:inline-block;
+	margin-top:45px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_steps_main_box_wrapper:hover .btc_step_hover_effect i:before{
+	color:#ffffff;
+	z-index:100;
+	position:relative;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_steps_main_box_wrapper:hover .btc_step_icon_wrapper{
+	border:2px dashed #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_steps_main_box_wrapper:hover .btc_step_icon_cont_wrapper span{
+	background:#4169E1;
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_steps_wrappers{
+	position:relative;
+}
+.btc_steps_bottom_line_wrapper:after{
+	content:'';
+	border:1px solid #e5e5e5;
+	width:100%;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom: 21px;
+    z-index: -1;
+}
+/*-- btc steps Wrapper End --*/
+/*-- btc currency Wrapper Start --*/
+.btc_currency_main_wrapper{
+	background:url('../images/content/currency_bg.jpg') 50% 0 repeat-y;
+	background-size:cover;
+	background-position:center 0;
+	background-repeat:no-repeat;
+	float:left;
+	width:100%;
+	height:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+
+}
+.btc_currency_heading_wrapper h5{
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_currency_heading_wrapper h3{
+	font-size:36px;
+	color:#ffffff;
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+.btc_currency_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_currency_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_currency_heading_wrapper p{
+	padding-top:30px;
+}
+.btc_currency_boxes_main_wrapper{
+	float:left;
+	width:100%;
+	margin-top:60px;
+}
+.btc_currency_box2, .btc_currency_box3, .btc_currency_box4{
+	float:left;
+	width:26%;
+	text-align: center;
+}
+.btc_currency_box1{
+	float:left;
+	width:20%;
+	text-align: left;
+}
+.btc_currency_box1 h5{
+	font-size:16px;
+	text-transform:uppercase;
+	margin-top:15px;
+	text-align:left;
+}
+.btc_currency_box1, .btc_currency_box2, .btc_currency_box3{
+	border-right:1px solid #797979;
+}
+.btc_currency_box2 h5, .btc_currency_box3 h5, .btc_currency_box4 h5{
+	font-size:16px;
+	text-transform:uppercase;
+	margin-top:15px;
+	padding-left: 20px;
+	text-align:center;
+}
+.btc_currency_box1 h5 a, .btc_currency_box2 h5 a, .btc_currency_box3 h5 a, .btc_currency_box4 h5 a{
+	color:#797979;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_currency_box1 i:before, .btc_currency_box2 i:before, .btc_currency_box3 i:before, .btc_currency_box4 i:before{
+	font-size:40px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_currency_box1:hover h5 a, .btc_currency_box2:hover h5 a, .btc_currency_box3:hover h5 a, .btc_currency_box4:hover h5 a{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_currency_box1:hover i:before, .btc_currency_box2:hover i:before, .btc_currency_box3:hover i:before, .btc_currency_box4:hover i:before{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc currency Wrapper End --*/
+/*-- btc calcultor Wrapper Start --*/
+.btc_calc_main_wrapper{
+	background:url('../images/content/bit_coin_bg.jpg') 50% 0 repeat-y;
+	background-size:cover;
+	background-position:center 0;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	float:left;
+	padding-top:100px;
+	padding-bottom:100px;
+	position:relative;
+}
+.btc_calc_heading_wrapper h5{
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_calc_heading_wrapper h3{
+	font-size:36px;
+	color:#000000;
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+.btc_calc_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_calc_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_calc_heading_wrapper p{
+	padding-top:30px;
+}
+.cryptonatorwidget input{
+	height:65px !important;
+	padding-left:30px !important;
+	margin-top:30px !important;
+	border:0 !important;
+}
+.cryptonatorwidget select{
+	height:65px !important;
+	margin-top:30px !important;
+	margin-left:20px !important;
+	border:0 !important;
+	padding:10px !important;
+}
+.cryptonatorwidget{
+	padding:0 !important;
+}
+.divider_30{
+	float:left;
+	width:50%;
+}
+.divider_30 ul{
+	margin-top:40px;
+}
+.divider_30 li a {
+    float: left;
+    width: 210px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    background: #4169E1;
+    color: #ffffff;
+    border: 2px solid transparent;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.divider_30 li a:hover{
+    background: transparent;
+    border: 2px solid #4169E1;
+    color: #4169E1;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.divider_30 .cal-convertor .ccc-widget.ccc-converter>div:first-child {
+	border: none !important; 
+	padding: 0px !important;
+	background: none !important;
+}
+.divider_30 .cal-convertor .poweredByWrapper{
+	 display: none;
+}
+.divider_30 .cal-convertor input{
+	height:50px;
+}
+.divider_30 .cal-convertor .fromSymbolLabel{
+	height:50px;
+	line-height:50px;
+	color:#4169E1 !important;
+} 
+.divider_30 .cal-convertor .styledSelect{
+	height:50px;
+	line-height:50px;
+	color:#4169E1 !important;
+} 
+/*-- btc calcultor Wrapper End --*/
+/*-- btc Video Wrapper Start --*/
+.btc_video_main_wrapper{
+	float:left;
+	width:100%;
+	background:#4169E1;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_video_left_wrapper{
+	float:left;
+	width:calc(100% - 20%);
+}
+.btc_video_right_wrapper{
+	float:left;
+	width:20%;
+}
+.btc_video_left_wrapper h1{
+	font-size:36px;
+	color:rgba(255, 255, 255, 0.8117647058823529);
+	position:relative;
+	padding-left:35px;
+	line-height: 38px;
+}
+.btc_video_left_wrapper h1 span{
+	color:#ffffff;
+	font-weight:bold;
+}
+.btc_video_left_wrapper h1:after{
+	    content: '';
+    border: 3px solid #ffffff;
+    width: 0px;
+    height: 78px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.btc_video_right_wrapper ul{
+	float:right;
+	margin-top: 10px;
+}
+.btc_video_right_wrapper li a{
+	float:right;
+	width:170px;
+	height:50px;
+	line-height:45px;
+	text-align:center;
+	background:#ffffff;
+	color:#000000;
+	border:2px solid transparent;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+	    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_video_right_wrapper li a:hover{
+	background:transparent;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc Video Wrapper End --*/
+/*-- btc Services Wrapper Start  --*/
+.btc_services_main_wrapper{
+	width:100%;
+	float:left;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_services_heading_main_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.btc_services_heading_wrapper{
+	float:left;
+	width:100%;
+	display:inline-block;
+}
+.btc_services_heading_wrapper p{
+	font-size:14px;
+	color:#4169E1;
+}
+.btc_services_heading_wrapper h1{
+	font-size:36px;
+	color:#222222;
+	padding-bottom:10px;
+}
+.btc_services_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_services_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_services_heading_wrapper span:before{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	right: 20px;
+    top: 13px;
+}
+.btc_services_heading_wrapper h5{
+	font-size:16px;
+	font-family: 'Lato', sans-serif;
+	color:#797979;
+	line-height:20px;
+	padding-top:20px;
+}
+.btc_left_service_main_wrapper{
+	float:left;
+	width:100%;
+	margin-top:100px;
+}
+.btc_left_ser_icon_wrapper{
+	float:left;
+	width:100px;
+	padding-top: 18px;
+}
+.btc_left_ser_icon_wrapper i:before{
+	font-size:70px;
+	color:#4169E1;
+}
+.btc_left_ser_icon_cont_wrapper{
+	float:left;
+	width:calc(100% - 100px);
+	padding-left:40px;
+	position:relative;
+}
+.btc_left_ser_icon_cont_wrapper:after{
+	content: '';
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 119px;
+    position: absolute;
+    left: 10px;
+    top: 1px;
+}
+.btc_left_ser_icon_cont_wrapper h1{
+	font-size:20px;
+	font-weight:bold;
+	color:#000000;
+}
+.btc_left_ser_icon_cont_wrapper p{
+	padding-top:20px;
+}
+.btc_left_ser_icon_cont_wrapper a{
+	margin-top:30px;
+	font-weight:bold;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_left_service_main_wrapper2{
+	margin-top:80px;
+}
+.btc_ser_center_img_wrapper{
+	margin-top:100px;
+}
+.btc_right_service_main_wrapper{
+	float:left;
+	width:100%;
+	margin-top:100px;
+}
+.btc_right_ser_icon_wrapper{
+	float:left;
+	width:100px;
+	padding-top: 18px;
+}
+.btc_right_ser_icon_wrapper i:before{
+	font-size:70px;
+	color:#4169E1;
+}
+.btc_right_ser_icon_cont_wrapper{
+	float:left;
+	width:calc(100% - 100px);
+	padding-right:40px;
+	position:relative;
+}
+.btc_right_ser_icon_cont_wrapper:after{
+	content: '';
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 119px;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+.btc_right_ser_icon_cont_wrapper h1{
+	font-size:20px;
+	font-weight:bold;
+	color:#000000;
+}
+.btc_right_ser_icon_cont_wrapper p{
+	padding-top:20px;
+}
+.btc_right_ser_icon_cont_wrapper a{
+	margin-top:30px;
+	font-weight:bold;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_right_service_main_wrapper2{
+	margin-top:80px;
+}
+/*-- btc Services Wrapper End  --*/
+/*-- btc chart Wrapper Start  --*/
+.btc_chart_main_wrapper{
+	float:left;
+	width:100%;
+	background:#f9f9f9;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_chart_heading_main_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.btc_chart_heading_wrapper{
+	float:left;
+	width:100%;
+	display:inline-block;
+}
+.btc_chart_heading_wrapper p{
+	font-size:14px;
+	color:#4169E1;
+}
+.btc_chart_heading_wrapper h1{
+	font-size:36px;
+	color:#222222;
+	padding-bottom:10px;
+}
+.btc_chart_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_chart_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_chart_heading_wrapper span:before{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	right: 20px;
+    top: 13px;
+}
+.sales-chart{
+	margin-top:60px;
+}
+/*-- btc chart Wrapper End  --*/
+/*-- btc Sell Wrapper Start  --*/
+.btc_sell_main_wrapper{
+	background:url('../images/content/buy_sell_bg.jpg') 50% 0 repeat-y;
+	background-position:left 0;
+	background-repeat:no-repeat;
+	float:left;
+	width:100%;
+	height:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+	position:relative;
+}
+.btc_sell_img_overlay{
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0%;
+	right:0%;
+	background:rgba(0,0,0,0.8);
+}
+.btc_sell_left_cont_wrapper h5{
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_sell_left_cont_wrapper h3{
+	font-size:36px;
+	color:#ffffff;
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+.btc_sell_left_cont_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_sell_left_cont_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_sell_left_cont_wrapper p{
+	padding-top:30px;
+}
+.btc_sell_left_cont_wrapper a{
+	float:left;
+	width:150px;
+	height:50px;
+	background:#4169E1;
+	color:#ffffff;
+	text-align:center;
+	line-height:45px;
+	border:1px solid transparent;
+	    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	margin-top:40px;
+}
+.btc_sell_left_cont_wrapper a:hover{
+	background:transparent;
+	border:1px solid #4169E1;
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btc_sell_right_side_wrapper{
+	float:left;
+	width:40%;
+	background:#050505;
+}
+.btc_sell_right_side_wrapper img{
+	position:absolute;
+	margin-top: 30px;
+}
+/*-- btc Sell Wrapper End  --*/
+/*-- btc team Wrapper Start  --*/
+.btc_team_main_wrapper{
+	float:left;
+	width:100%;
+	padding-top:134px;
+	padding-bottom:100px;
+}
+.btc_team_left_wrapper{
+	float:left;
+	width:30%;
+	padding-top:60px;
+}
+.btc_team_right_wrapper{
+	float:left;
+	width:70%;
+}
+.btc_team_left_wrapper h5{
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_team_left_wrapper h3{
+	font-size:36px;
+	color:#222222;
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+.btc_team_left_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_team_left_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_team_left_wrapper p{
+	padding-top:30px;
+}
+.btc_team_slider_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_team_slider_wrapper  .owl-theme .owl-dots{
+	display:none;
+}
+.btc_team_slider_wrapper .owl-theme .owl-nav {
+    position: absolute;
+    margin: 0;
+   left: -347px;
+    top: 300px;
+    right: 0;
+	z-index:1000;
+	display:block;
+}
+.btc_team_slider_wrapper .owl-theme .owl-nav .owl-prev{
+    margin: 0;
+    padding: 0;
+    left: 0;
+	top:0;
+	color:#000000;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	-webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	background:#f9f9f9;
+    position: absolute;
+    text-align: center;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_slider_wrapper .owl-theme .owl-nav .owl-prev i:before, .btc_team_slider_wrapper  .owl-theme .owl-nav .owl-next i:before{
+	font-size:24px;
+	margin-left:0;
+}
+.btc_team_slider_wrapper  .owl-theme .owl-nav .owl-next{
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+    left: 60px;
+	top:0;
+    position: absolute;
+	color:#000000;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	-webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	background:#f9f9f9;
+    text-align: center;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_slider_wrapper .owl-theme .owl-nav .owl-prev:hover, .btc_team_slider_wrapper  .owl-theme .owl-nav .owl-next:hover{
+	background:#4169E1;
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_slider_cont_main_wrapper{
+	float:left;
+	width:100%;
+	overflow:hidden;
+}
+.btc_team_img_wrapper{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.btc_team_img_cont_wrapper{
+	float:left;
+	width:100%;
+	background:#f9f9f9;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:30px;
+	z-index:1;
+	position:relative;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_img_cont_wrapper h4{
+	font-size:20px;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+.btc_team_img_cont_wrapper p{
+	color:#797979;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_img_cont_wrapper h4 a{
+	color:#000000;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_img_wrapper img{
+	-webkit-border-top-left-radius: 20px;
+    -moz-border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+    -moz-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.btc_team_social_wrapper{
+	float:left;
+	width:80%;
+	left:0;
+	right:0;
+	margin:0px auto;
+	background:rgba(0,0,0,0.7);
+	position: absolute;
+    bottom: -50px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	text-align:center;
+}
+.btc_team_slider_cont_main_wrapper:hover .btc_team_social_wrapper{
+	bottom:0;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_social_wrapper ul{
+	display:inline-block;
+}
+.btc_team_social_wrapper li{
+	float:left;
+}
+.btc_team_social_wrapper li:first-child{
+	margin-left:0;
+}
+.btc_team_social_wrapper li a{
+	float:left;
+	color:#ffffff;
+	width: 40px;
+    height: 40px;
+    line-height: 43px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_social_wrapper li a:hover{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_slider_cont_main_wrapper:hover .btc_team_img_cont_wrapper{
+	background:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_team_slider_cont_main_wrapper:hover .btc_team_img_cont_wrapper h4 a, .btc_team_slider_cont_main_wrapper:hover .btc_team_img_cont_wrapper p{
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc team Wrapper End  --*/
+/*-- btc pricing Wrapper Start  --*/
+.btc_pricing_main_wrapper{
+	background:url('../images/content/pricing_bg.jpg') 50% 0 repeat-y;
+	background-size:cover;
+	background-position:center 0;
+	background-repeat:no-repeat;
+	height:100%;
+	float:left;
+	width:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_pricing_heading_main_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.btc_pricing_heading_wrapper{
+	float:left;
+	width:100%;
+	display:inline-block;
+}
+.btc_pricing_heading_wrapper p{
+	font-size:14px;
+	color:#4169E1;
+}
+.btc_pricing_heading_wrapper h1{
+	font-size:36px;
+	color:#222222;
+	padding-bottom:10px;
+}
+.btc_pricing_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_pricing_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_pricing_heading_wrapper span:before{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	right: 20px;
+    top: 13px;
+}
+.btc_pricing_heading_wrapper h5 {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #797979;
+    line-height: 20px;
+    padding-top: 20px;
+}
+.btc_pricing_box_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+	margin-top:60px;
+}
+.btc_pricing_icon_wrapper{
+	display:inline-block;
+	 -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	background: #f9f9f9;
+	padding: 10px;
+	    z-index: 10;
+    position: relative;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_hover_effect{
+	position:relative;
+	float:left;
+	width:100%;
+}
+.btc_step_overlay{
+	position:absolute;
+	left:50%;
+	right:50%;
+	top:50%;
+	bottom:50%;
+	opacity:0;
+	padding:10px;
+	 -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_box_wrapper:hover .btc_step_overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:#4169E1;
+	opacity:1;
+}
+.btc_pricing_hover_effect i{
+	width:125px;
+	height:125px;
+	background:#ffffff;
+	text-align:center;
+	line-height:125px;
+	float:left;
+	-webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_hover_effect i:before{
+	position:relative;
+	font-size:45px;
+	margin-left:0;
+	color:#4169E1;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_box_wrapper:hover .btc_pricing_hover_effect i:before{
+	color:#ffffff;
+	z-index:100;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_wrapper{
+	float:left;
+	width:100%;
+	background:#ffffff;
+	padding-top:125px;
+	padding-bottom:50px;
+	    position: relative;
+    margin-top: -84px;
+	 -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_box_wrapper:hover .btc_pricing_cont_wrapper{
+	background:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_wrapper h3{
+	font-size:20px;
+	color:#000000;
+	text-transform:uppercase;
+	font-weight:bold;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_box_wrapper:hover .btc_pricing_cont_wrapper h3{
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_bottom_line{
+	position:relative;
+}
+.btc_pricing_cont_bottom_line:before{
+	    content: '';
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 13px;
+    position: absolute;
+    right: 0;
+    left: 9px;
+    margin: 0px auto;
+    top: 30px;
+    -ms-transform: rotate(228deg);
+    -webkit-transform: rotate(228deg);
+    transform: rotate(228deg);
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_bottom_line:after{
+	content: '';
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 13px;
+    position: absolute;
+    right: 9px;
+    left: 0;
+    top: 30px;
+    margin: 0px auto;
+    ms-transform: rotate(313deg);
+    -webkit-transform: rotate(313deg);
+    transform: rotate(313deg);
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_bottom_line_state{
+	position:relative;
+}
+.btc_pricing_cont_bottom_line_state:after{
+	content:'';
+	border:1px solid #e5e5e5;
+	width:130px;
+	height:1px;
+	position:absolute;
+	left:0;
+	right:0;
+	top:31px;
+	margin:0px auto;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_bottom_line_state:before{
+	content:'';
+	border:1px solid #ffffff;
+	width:15px;
+	height:1px;
+	position:absolute;
+	left:0;
+	right:0;
+	top:31px;
+	margin:0px auto;
+	z-index:1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_wrapper p{
+	color:#4169E1;
+	padding-top:65px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_wrapper ul{
+	margin-top:25px;
+	display:inline-block;
+}
+.btc_pricing_cont_wrapper li i{
+	padding-right:10px;
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_wrapper li:first-child{
+	margin-top:0;
+}
+.btc_pricing_cont_wrapper li{
+	margin-top:20px;
+	text-align:left;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_cont_wrapper h4{
+	font-family: 'Lato', sans-serif;
+	font-size:16px;
+}
+.btc_pricing_cont_wrapper h4 a {
+	display:inline-block;
+    width: 180px;
+    height: 50px;
+    background: #4169E1;
+    color: #ffffff;
+	font-weight:bold;
+	text-transform:uppercase;
+    text-align: center;
+    line-height: 45px;
+	margin-top:40px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_box_wrapper:hover .btc_pricing_cont_wrapper h4 a{
+	background:#ffffff;
+	color:#000000;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_box_wrapper:hover .btc_pricing_cont_wrapper h3, .btc_pricing_box_wrapper:hover .btc_pricing_cont_wrapper p, .btc_pricing_box_wrapper:hover .btc_pricing_cont_wrapper li i, .btc_pricing_box_wrapper:hover .btc_pricing_cont_wrapper li{
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_box_wrapper:hover .btc_pricing_cont_bottom_line_state:after, .btc_pricing_box_wrapper:hover .btc_pricing_cont_bottom_line:after, .btc_pricing_box_wrapper:hover .btc_pricing_cont_bottom_line:before{
+	border:1px solid #ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_pricing_box_wrapper:hover .btc_pricing_cont_bottom_line_state:before{
+	border:1px solid #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc pricing Wrapper End  --*/
+/*-- btc contact Wrapper Start  --*/
+.btc_contact_main_wrapper{
+	background:url('../images/content/contact_bg.jpg') 50% 0 repeat-y;
+	background-size:cover;
+	background-position:center 0;
+	background-repeat:no-repeat;
+	width:100%;
+	height:100%;
+	float:left;
+	padding-top:100px;
+	position:relative;
+}
+.btc_contact_img_overlay{
+	position:absolute;
+	top:0%;
+	left:0%;
+	right:0%;
+	bottom:0%;
+	background:rgba(0,0,0,0.8);
+}
+.btc_contact_form_box{
+	float:left;
+	width:100%;
+	padding:60px;
+	background:rgba(255, 255, 255, 0.10980392156862745);
+	-webkit-border-top-left-radius: 20px;
+    -moz-border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+    -moz-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.btc_contact_heading_wrapper h3{
+	font-size:30px;
+	font-weight:100;
+	color:rgba(255, 255, 255, 0.9215686274509803);
+	text-align:center;
+}
+.btc_contact_heading_wrapper h3 span{
+	font-weight:bold;
+	color:#ffffff;
+}
+.btc_contact_cont_bottom_line{
+	position:relative;
+}
+.btc_contact_cont_bottom_line:before{
+	    content: '';
+    border: 1px solid rgba(255, 255, 255, 0.3215686274509804);
+    width: 1px;
+    height: 13px;
+    position: absolute;
+    right: 0;
+    left: 9px;
+    margin: 0px auto;
+    top: 30px;
+    -ms-transform: rotate(228deg);
+    -webkit-transform: rotate(228deg);
+    transform: rotate(228deg);
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_cont_bottom_line:after{
+	content: '';
+    border: 1px solid rgba(255, 255, 255, 0.3215686274509804);
+    width: 1px;
+    height: 13px;
+    position: absolute;
+    right: 9px;
+    left: 0;
+    top: 30px;
+    margin: 0px auto;
+    ms-transform: rotate(313deg);
+    -webkit-transform: rotate(313deg);
+    transform: rotate(313deg);
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_cont_bottom_line_state{
+	position:relative;
+}
+.btc_contact_cont_bottom_line_state:after{
+	content:'';
+	border:1px solid rgba(255, 255, 255, 0.3215686274509804);
+	width:130px;
+	height:1px;
+	position:absolute;
+	left:0;
+	right:0;
+	top:31px;
+	margin:0px auto;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_cont_bottom_line_state:before{
+	content:'';
+	border:1px solid rgba(0, 0, 0, 0.5098039215686274);
+	width:15px;
+	height:1px;
+	position:absolute;
+	left:0;
+	right:0;
+	top:31px;
+	margin:0px auto;
+	z-index:1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_input_form1 input{
+	width:100%;
+	height:50px;
+	background:#ffffff;
+	padding-left:45px;
+	padding-right:30px;
+	border:2px solid #ffffff;
+	margin-top:90px;
+	position:relative;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_input_form1 input:hover, .btc_contact_input_form1 input:focus{
+	border:2px solid #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_input_form1 i{
+	position:absolute;
+	color:#4169E1;
+	left: 35px;
+    bottom: 16px;
+}
+.btc_contact_input_form2 input{
+	width:100%;
+	height:50px;
+	background:#ffffff;
+	padding-left:45px;
+	padding-right:30px;
+	border:2px solid #ffffff;
+	margin-top:20px;
+	position:relative;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_input_form2 input:hover, .btc_contact_input_form2 input:focus{
+	border:2px solid #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_input_form2 i{
+	position:absolute;
+	color:#4169E1;
+	left: 35px;
+    bottom: 16px;
+}
+.btc_contact_btn_wrapper a {
+	float:left;
+    width: 100%;
+    height: 50px;
+    background: #4169E1;
+    color: #ffffff;
+	letter-spacing:2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 30px;
+	font-size:16px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_btn_wrapper a:hover{
+	background:#ffffff;
+	color:#000000;
+	 -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_btn_pera_wrapper p{
+	padding-top:30px;
+}
+.btc_contact_btn_pera_wrapper p a{
+	color:#4169E1;
+}
+.btc_contact_accord_heading_wrapper{
+	float:left;
+	width:100%;
+	padding-top:40px;
+}
+.btc_contact_accord_heading_wrapper h5{
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_contact_accord_heading_wrapper h3{
+	font-size:36px;
+	color:#ffffff;
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+.btc_contact_accord_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_contact_accord_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_contact_accord_heading_wrapper p{
+	padding-top:30px;
+}
+.trucking_faq_wrapeer{
+	float:left;
+	width:100%;
+	margin-top:40px;
+}
+.lv_faq_wrapper .panel-title{
+	position:relative;
+}
+.lv_faq_wrapper .panel-title:after{
+    content: "";
+    position: absolute;
+    border-left: 1px solid #ffffff73;
+    top: 0;
+    bottom: 0;
+    left: 90px;
+}
+.accordionFifteen .panel-group .panel+.panel {
+	margin-top: 20px;
+}
+.accordionFifteen .panel-group {
+  margin-bottom: 0;
+}
+.accordionFifteen .panel-default {
+  border: 0;
+}
+.accordionFifteen .panel {
+	background-color: rgba(255, 255, 255, 0.058823529411764705);
+	box-shadow: none;
+	border-left: 1px solid rgba(255, 255, 255, 0.45098039215686275);
+	border-right: 1px solid rgba(255, 255, 255, 0.45098039215686275);
+	border-radius: 0;
+	margin: 0;
+}
+.accordionFifteen .panel .panel-heading a {	
+	display: block;
+	background: transparent;
+	padding: 15px 20px;
+	font-size:14px;
+	color: #fff;
+	font-weight:400;
+	border-top: 1px solid rgba(255, 255, 255, 0.45098039215686275);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.45098039215686275);
+	text-decoration:none;
+	font-family: 'Raleway', sans-serif;
+}
+.accordionFifteen .panel .panel-heading a.collapsed {
+	color: #ffffff;
+	background-color:transparent;
+	display: block;
+	padding: 15px 20px;
+	font-size:14px;
+	border-top: 1px solid #ffffff73;
+	border-bottom: 1px solid #ffffff73;
+	text-decoration:none;
+	font-family: 'Raleway', sans-serif;
+}
+.accordionFifteen .panel-default>.panel-heading {
+  border-radius: 0px;
+  padding:0px;
+     background: transparent;
+}
+.accordionFifteen .panel-group .panel-heading+.panel-collapse>.panel-body {
+  border-top: 0;
+  padding-top: 0;
+  padding: 10px 20px 15px 20px;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45098039215686275);
+}
+.accordionFifteen .panel .panel-heading a:before,
+.accordionFifteen .panel .panel-heading a.collapsed:before{
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    float: left;
+    margin-right: 60px;
+    margin-left: 20px;
+    display: block;
+}
+.accordionFifteen .panel .panel-heading a:after,
+.accordionFifteen .panel .panel-heading a.collapsed:after{
+	font-family: 'FontAwesome';
+	font-size: 25px;
+	float: right;
+	width: 50px;
+	height: 25px;
+	line-height: 24px;
+	text-align: center;
+	display: block;
+	border-radius: 50%;	
+}
+.accordionFifteen .panel .panel-heading a:after {  
+  content: "\2212";
+    background: transparent;
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    color: #ffffff;
+    line-height: 15px;
+}
+.accordionFifteen .panel .panel-heading a.collapsed:after {
+	content: "\2b";
+	background: transparent ;
+  border-radius:2px;
+  width:15px;
+  height:15px;
+  color:#fff;
+  line-height:15px;
+}
+/*-- btc contact Wrapper End  --*/
+/*-- btc blog Wrapper Start  --*/
+.btc_blog_index_main_wrapper{
+	float:left;
+	width:100%;
+	background:#f9f9f9;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_blog_index_heading_main_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.btc_blog_index_heading_wrapper{
+	float:left;
+	width:100%;
+	display:inline-block;
+}
+.btc_blog_index_heading_wrapper p{
+	font-size:14px;
+	color:#4169E1;
+}
+.btc_blog_index_heading_wrapper h1{
+	font-size:36px;
+	color:#222222;
+	padding-bottom:10px;
+}
+.btc_blog_index_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_blog_index_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_blog_index_heading_wrapper span:before{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	right: 20px;
+    top: 13px;
+}
+.btc_blog_index_heading_wrapper h5 {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #797979;
+    line-height: 20px;
+    padding-top: 20px;
+}
+.btc_blog_indx_box_wrapper{
+	float:left;
+	width:100%;
+	margin-top:60px;
+}
+.btc_blog_indx_img_wrapper{
+	position:relative;
+}
+.btc_blog_indx_img_wrapper img{
+	width:100%;
+	-webkit-border-top-left-radius: 20px;
+    -moz-border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+}	
+.btc_blog_indx_date_wrapper{
+    width: 100px;
+    height: 100px;
+    background: #4169E1;
+    text-align: center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    border: 12px solid #ffffff;
+}
+.btc_blog_indx_date_wrapper p{
+	font-size:24px;
+	color:#ffffff;
+	font-weight:bold;
+}
+.btc_blog_indx_date_wrapper ul{
+	padding-top:15px;
+}
+.btc_blog_indx_date_wrapper li:first-child{
+	font-size:24px;
+	color:#ffffff;
+	font-weight:bold;
+}
+.btc_blog_indx_date_wrapper li:last-child{
+	font-size:14px;
+	color:#ffffff;
+}
+.btc_blog_indx_cont_wrapper{
+	float:left;
+	width:100%;
+	background:#ffffff;
+	padding-top:70px;
+	padding-left:40px;
+	padding-right:40px;
+}
+.btc_blog_indx_cont_wrapper h5{
+	font-size:20px;
+	color:#222222;
+	line-height: 28px;
+}
+.btc_blog_indx_cont_wrapper p{
+	padding-top:30px;
+}
+.btc_blog_indx_cont_wrapper h4{
+	padding-top:20px;
+	padding-bottom:40px;
+}
+.btc_blog_indx_cont_wrapper h4 a{
+	font-size:16px;
+	font-weight:bold;
+	color:#4169E1;
+	font-family: 'Lato', sans-serif;
+	text-transform:uppercase;
+}
+.btc_blog_indx_cont_bottom{
+	float:left;
+	width:100%;
+	background:#ffffff;
+	border-top:1px solid #e5e5e5;
+}
+.btc_blog_indx_cont_bottom_left{
+	float:left;
+	width:50%;
+	padding-top:25px;
+	padding-bottom:25px;
+	text-align:center;
+	border-right:1px solid #e5e5e5;
+}
+.btc_blog_indx_cont_bottom_left p, .btc_blog_indx_cont_bottom_right p{
+	margin:0;
+}
+.btc_blog_indx_cont_bottom_left p i, .btc_blog_indx_cont_bottom_right p i{
+	color:#4169E1;
+}
+.btc_blog_indx_cont_bottom_right{
+	float:left;
+	width:50%;
+	padding-top:25px;
+	padding-bottom:25px;
+	text-align:center;
+}
+.btc_blog_indx_cont_bottom_left p a, .btc_blog_indx_cont_bottom_right p a{
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_blog_indx_cont_bottom_left p a:hover, .btc_blog_indx_cont_bottom_right p a:hover{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc blog Wrapper End  --*/
+/*-- btc partner slider Wrapper Start  --*/
+.btc_partner_slider_main_wrapper{
+	float:left;
+	width:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_partner_slider_heading_wrapper h5{
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_partner_slider_heading_wrapper h3{
+	font-size:36px;
+	color:#222222;
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+.btc_partner_slider_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_partner_slider_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_partner_slider_wrapper{
+	float:left;
+	width:100%;
+	margin-top:60px;
+}
+.btc_partner_slider_wrapper  .owl-theme .owl-dots{
+	display:none;
+}
+.btc_partner_slider_wrapper .owl-theme .owl-nav {
+        position: absolute;
+    margin: 0;
+    right: 0;
+    top: -140px;
+    right: 109px;
+    z-index: 1000;
+    display: block;
+}
+.btc_partner_slider_wrapper .owl-theme .owl-nav .owl-prev{
+    margin: 0;
+    padding: 0;
+    left: 0;
+	top:0;
+	color:#000000;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	-webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	background:#f9f9f9;
+    position: absolute;
+    text-align: center;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_partner_slider_wrapper .owl-theme .owl-nav .owl-prev i:before, .btc_partner_slider_wrapper  .owl-theme .owl-nav .owl-next i:before{
+	font-size:24px;
+	margin-left:0;
+}
+.btc_partner_slider_wrapper  .owl-theme .owl-nav .owl-next{
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+    left: 60px;
+	top:0;
+    position: absolute;
+	color:#000000;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	-webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	background:#f9f9f9;
+    text-align: center;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_partner_slider_wrapper .owl-theme .owl-nav .owl-prev:hover, .btc_partner_slider_wrapper  .owl-theme .owl-nav .owl-next:hover{
+	background:#4169E1;
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_partner_img{
+	opacity:0.4;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_partner_img:hover{
+	opacity:1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc partner slider Wrapper End  --*/
+/*-- Newsletter css Start --*/
+.btc_newsletter_wrapper{
+	float:left;
+	width:100%;
+	background:#4169E1;
+	padding-top:70px;
+	padding-bottom:70px;
+	position:relative;
+}
+.jp_newsletter_img_overlay_wrapper{
+	position:absolute;
+	top:0%;
+	left:0%;
+	right:0%;
+	bottom:0%;
+	background:#0e1427eb;
+}
+.btc_newsletter_text{
+	float:left;
+	width:100%;
+	padding-top: 2px;
+}
+.btc_newsletter_field{
+	float:left;
+	width:100%;
+}
+.btc_newsletter_field input{
+	float: left;
+    width: calc(95% - 160px);
+    border: 2px solid rgba(255, 255, 255, 0.2784313725490196);
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 15px;
+    color: #ffffff;
+    background-color: transparent;
+    position: relative;
+    padding-left: 40px;
+}
+.btc_newsletter_field i{
+	position:absolute;
+	left: 29px;
+    z-index: 1;
+    top: 17px;
+	color:rgba(255, 255, 255, 0.47843137254901963);
+}
+.btc_newsletter_text h1{
+	font-size:33px;
+	color:#ffffff;
+	font-weight:100;
+	float:left;
+	width:calc(100% - 40px);
+}
+.btc_newsletter_text h1 span{
+	font-weight:bold;
+}
+.btc_newsletter_field input::-webkit-input-placeholder {
+	color: #ffffff7a;
+}
+.btc_newsletter_field input::-moz-placeholder {
+	color: #ffffff7a;
+}
+.btc_newsletter_field input:-ms-input-placeholder {
+	color: #ffffff7a;
+}
+.btc_newsletter_field input:-moz-placeholder {
+	color: #ffffff7a;
+}
+.btc_newsletter_field button{
+	float:right;
+	width:160px;
+	height:50px;
+	font-size:16px;
+	text-transform:uppercase;
+	border-radius:2px;
+	background-color:#ffffff;
+	color:#000000;
+	font-weight:bold;
+	letter-spacing:1px;
+	border:0px;
+	border:1px solid #ffffff;
+	-webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btc_newsletter_field button:hover{
+	background:transparent;
+	color:#ffffff;
+	border:1px solid #ffffff;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btc_newsletter_text i{
+	width:40px;
+	float:left;
+	padding-top: 7px;
+}
+.btc_newsletter_text i:before{
+	font-size:30px;
+	color:#ffffff;
+	margin:0;
+}
+/*-- Newsletter css End --*/
+/*-- btc footer Wrapper Start --*/
+.btc_footer_main_wrapper{
+	float:left;
+	width:100%;
+	background:#1b1b1b;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_footer_logo_left{
+	float:left;
+	width:50%;
+}
+.btc_footer_logo_right{
+	float:left;
+	width:50%;
+	position:relative;
+}
+.btc_footer_logo_right:after{
+	content:'';
+	border:1px solid #797979;
+	width:1px;
+	height:60px;
+	position:absolute;
+	right: -60px;
+    top: 2px;
+}
+.btc_footer_logo_right p{
+	line-height: 25px;
+    padding-top: 5px;
+}
+.btc_footer_email_wrapper{
+	float:left;
+	width:50%;
+}
+.btc_footer_social_wrapper{
+	float:left;
+	width:50%;
+}
+.btc_footer_email_wrapper p{
+	padding-top:5px;
+	margin-bottom:0;
+}
+.btc_footer_email_wrapper p a{
+	color:#4169E1;
+}
+.btc_footer_social_wrapper ul{
+	float:right;
+	margin-top: 3px;
+}
+.btc_footer_social_wrapper li{
+	float:left;
+	margin-left:10px;
+}
+.btc_footer_social_wrapper li a{
+	float:left;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	background:#282828;
+	color:#ababab;
+	font-size: 20px;
+	-webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btc_footer_social_wrapper li a:hover{
+	background:#4169E1;
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/*-- btc footer Wrapper End --*/
+/*-- btc bottom footer Wrapper Start --*/
+.btc_bottom_footer_main_wrapper{
+	float:left;
+	width:100%;
+	background:#141414;
+	padding-top:30px;
+	padding-bottom:30px;
+	position:relative;
+}
+#scroll {
+    position: absolute;
+    right: 90px;
+    top: -69px;
+    cursor: pointer;
+    width: 60px;
+    height: 70px;
+    display: none;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+    -moz-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background:#141414;
+}
+#scroll span{
+    position:absolute;
+    top:45%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+	color:#fff;
+	font-size: 30px;
+}
+.btc_bottom_footer_left p{
+	margin:0;
+	font-size:14px;
+}
+.btc_bottom_footer_right ul{
+	float:right;
+}
+.btc_bottom_footer_right li{
+	float:left;
+	margin-left:50px;
+	position:relative;
+	font
+}
+.btc_bottom_footer_right li:first-child:after{
+	content:'';
+	border:1px solid #797979;
+	width:1px;
+	height:15px;
+	position:absolute;
+	    right: -28px;
+    top: 6px;
+}
+/*-- btc bottom footer Wrapper End --*/
+
+/**********---------------- ABOUT CSS START --------------****************/
+/*-- btc Tittle Wrapper Start --*/
+.btc_tittle_main_wrapper{
+	background:url('../images/content/tittle_bg.jpg') 50% 0 repeat-y;
+	background-size:cover;
+	background-position:center 0;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	float:left;
+	width:100%;
+	height:100%;
+	position:relative;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+.btc_tittle_img_overlay{
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0%;
+	right:0%;
+	background:rgba(0,0,0,0.8);
+}
+.btc_tittle_left_heading{
+	float:left;
+	width:100%;
+}
+.btc_tittle_left_heading h1{
+	font-size:36px;
+	font-weight:bold;
+	color:#ffffff;
+	text-transform:uppercase;
+	margin-top: 10px;
+}
+.btc_tittle_right_heading{
+	float:left;
+	width:100%;
+}
+.btc_tittle_right_cont_wrapper ul{
+	background:#000000e0;
+	float:right;
+	padding:15px 30px 15px 30px;
+}
+.btc_tittle_right_cont_wrapper li{
+	float:left;
+	margin-left:20px;
+}
+.btc_tittle_right_cont_wrapper li i{
+	position:relative;
+	left:10px;
+	color:rgba(255, 255, 255, 0.6392156862745098);
+}
+.btc_tittle_right_cont_wrapper li:first-child{
+	margin-left:0;
+}
+.btc_tittle_right_cont_wrapper li a{
+	color:rgba(255, 255, 255, 0.6392156862745098);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btc_tittle_right_cont_wrapper li a:hover{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btc_tittle_right_cont_wrapper li:last-child{
+	color:#4169E1;
+}
+/*-- btc Tittle Wrapper End --*/
+/*-- btc about downlord Wrapper Start --*/
+.btc_about_down_main_wrapper{
+	float:left;
+	width:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_about_down_heading_wrapper{
+	float:left;
+	width:100%;
+	padding-top:30px;
+}
+.btc_about_down_heading_wrapper h5{
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_about_down_heading_wrapper h3{
+	font-size:36px;
+	color:#222222;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+.btc_about_down_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_about_down_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_about_down_heading_wrapper p{
+	padding-top:30px;
+}
+.btc_about_down_heading_wrapper ul{
+	margin-top:30px;
+}
+.btc_about_down_heading_wrapper li{
+	float:left;
+	margin-left:30px;
+}
+.btc_about_down_heading_wrapper li:first-child{
+	margin-left:0;
+}
+.btc_about_down_heading_wrapper li a{
+	font-size:35px;
+	color:#b5b5b5;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btc_about_down_heading_wrapper li a:hover{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btc_about_down_btn a {
+    float: left;
+    width: 210px;
+    height: 50px;
+    background: #4169E1;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin-top:30px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_about_down_btn a:hover{
+    background: transparent;
+    border: 1px solid #4169E1;
+    color: #4169E1;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc about downlord Wrapper End --*/
+/*-- btc life style Wrapper Start --*/
+.btc_about_ls_main_wrapper{
+	float:left;
+	width:100%;
+	background:#f9f9f9;
+	padding-top:100px;
+	padding-bottom:60px;
+}
+.btc_about_ls_heading_main_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.btc_about_ls_heading_wrapper{
+	float:left;
+	width:100%;
+	display:inline-block;
+}
+.btc_about_ls_heading_wrapper p{
+	font-size:14px;
+	color:#4169E1;
+}
+.btc_about_ls_heading_wrapper h1{
+	font-size:36px;
+	color:#222222;
+	padding-bottom:10px;
+}
+.btc_about_ls_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_about_ls_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_about_ls_heading_wrapper span:before{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	right: 20px;
+    top: 13px;
+}
+.btc_about_ls_bottom_cont_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+	background:#f5f5f5;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+.btc_about_left_ls_pera_wrapper p, .btc_about_right_ls_pera_wrapper p{
+	padding-top:60px;
+}
+.btc_currency_boxes_main_wrapper{
+	float:left;
+	width:100%;
+	margin-top:60px;
+}
+.btc_about_currency_box1, .btc_about_currency_box2, .btc_about_currency_box3, .btc_about_currency_box4{
+	display:inline-block;
+	width:15%;
+	text-align: center;
+}
+.btc_about_currency_box1, .btc_about_currency_box2, .btc_about_currency_box3{
+	border-right:1px solid #797979;
+}
+.btc_about_currency_box1 h5, .btc_about_currency_box2 h5, .btc_about_currency_box3 h5, .btc_about_currency_box4 h5{
+	font-size:16px;
+	text-transform:uppercase;
+	margin-top:15px;
+	text-align:center;
+}
+.btc_about_currency_box1 h5 a, .btc_about_currency_box2 h5 a, .btc_about_currency_box3 h5 a, .btc_about_currency_box4 h5 a{
+	color:#797979;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_about_currency_box1 i:before, .btc_about_currency_box2 i:before, .btc_about_currency_box3 i:before, .btc_about_currency_box4 i:before{
+	font-size:40px;
+	margin-left:0;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_about_currency_box1:hover h5 a, .btc_about_currency_box2:hover h5 a, .btc_about_currency_box3:hover h5 a, .btc_about_currency_box4:hover h5 a{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_about_currency_box1:hover i:before, .btc_about_currency_box2:hover i:before, .btc_about_currency_box3:hover i:before, .btc_about_currency_box4:hover i:before{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc life style Wrapper End --*/
+/*-- btc buy Wrapper Start --*/
+.btc_about_buy_main_wrapper{
+	background:url('../images/content/about_buy_bg.jpg') 50% 0 repeat-y;
+	background-size:cover;
+	background-position:center 0;
+	background-repeat:no-repeat;
+	float:left;
+	width:100%;
+	height:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+	position:relative;
+	text-align:center;
+}
+.btc_about_buy_img_overlay{
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0%;
+	right:0%;
+	background:rgba(0,0,0,0.8);
+}
+.btc_about_buy_heading h1{
+	font-size:36px;
+	color:rgba(255, 255, 255, 0.8784313725490196);
+	font-weight:bold;
+}
+.btc_about_buy_heading p{
+	color:rgba(255, 255, 255, 0.7686274509803922);
+	padding-top:25px;
+}
+.btc_about_buy_heading a{
+	display:inline-block;
+    width: 210px;
+    height: 50px;
+    background: #4169E1;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin-top:25px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_about_buy_heading a:hover{
+    background: transparent;
+    border: 1px solid #4169E1;
+    color: #4169E1;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc buy Wrapper End --*/
+/**********---------------- ABOUT CSS END --------------****************/
+
+/**********---------------- SERVICES CSS START --------------****************/
+/*-- btc service Wrapper Start --*/
+.btc_services_indx_main_wrapper{
+	float:left;
+	width:100%;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+.btc_ser_indx_box_margin{
+	margin-top:50px;
+}
+.btc_ser_indx_box_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_indx_service_main_wrapper{
+	float:left;
+	width:100%;
+	margin-top:40px;
+}
+.btc_indx_ser_icon_wrapper{
+	float:left;
+	width:100px;
+	padding-top: 18px;
+}
+.btc_indx_ser_icon_wrapper i:before{
+	font-size:70px;
+	color:#4169E1;
+	margin-left:0;
+}
+.btc_indx_ser_icon_cont_wrapper{
+	float:left;
+	width:calc(100% - 100px);
+	padding-left:40px;
+	position:relative;
+}
+.btc_indx_ser_icon_cont_wrapper:after{
+	content: '';
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 119px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+.btc_indx_ser_icon_cont_wrapper h1{
+	font-size:20px;
+	font-weight:bold;
+	color:#000000;
+}
+.btc_indx_ser_icon_cont_wrapper p{
+	padding-top:20px;
+}
+.btc_indx_ser_icon_cont_wrapper a{
+	margin-top:30px;
+	font-weight:bold;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_pricing_service_inxd_main_wrapper{
+	padding-top:130px;
+}
+
+/*-- btc service Wrapper End --*/
+/**********---------------- SERVICES CSS END --------------****************/
+
+/**********---------------- EXCHSNGE CSS START --------------****************/
+/*-- btc exchange pricing chart Wrapper Start --*/
+.btc_exch_pricing_chart_main_wrapper{
+	float:left;
+	width:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_exch_chart_heading_main_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.btc_exch_chart_heading_wrapper{
+	float:left;
+	width:100%;
+	display:inline-block;
+}
+.btc_exch_chart_heading_wrapper p{
+	font-size:14px;
+	color:#4169E1;
+}
+.btc_exch_chart_heading_wrapper h1{
+	font-size:36px;
+	color:#222222;
+	padding-bottom:10px;
+}
+.btc_exch_chart_heading_wrapper span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_exch_chart_heading_wrapper span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_exch_chart_heading_wrapper span:before{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	right: 20px;
+    top: 13px;
+}
+.btc_exch_chart_heading_wrapper h5{
+	font-size:16px;
+	font-family: 'Lato', sans-serif;
+	color:#797979;
+	line-height:20px;
+	padding-top:20px;
+}
+.btc_exch_table_main_wrapper img{
+	padding-right:10px;
+}
+.btc_exch_table_main_wrapper{
+	margin-top:60px;
+	border: 1px solid #e5e5e5;
+	background:#ffffff;
+}
+.btc_exch_table_main_wrapper tr th{
+	padding-top:15px !important;
+	padding-bottom:15px !important;
+	border-bottom:1px solid #e5e5e5 !important;
+	padding-left:20px !important;
+	color:#222222 !important;
+	font-size:16px !important;
+}
+.btc_exch_table_main_wrapper tr td{
+	border-top:0 !important;
+	padding-left:20px !important;
+}
+.up{
+	color:#0ee40e  !important;
+}
+.down{
+	color:#f97f76  !important;
+}
+.btc_exch_chart_row_top{
+	padding-top:40px !important;
+}
+/*-- btc exchange pricing chart Wrapper End --*/
+
+/**********---------------- EXCHSNGE CSS END --------------****************/
+
+
+/**********---------------- TESM CSS START --------------****************/
+/*-- btc team index Wrapper Start --*/
+.btc_team_indx_main_wrapper{
+	float:left;
+	width:100%;
+	background:#f9f9f9;
+	padding-top:100px;
+	padding-bottom:100px;
+	text-align:center;
+}
+.btc_team_indx_tabs{
+	margin-top:0;
+}
+.btc_team_index_img_cont_wrapper{
+	background:#ffffff;
+}
+.btn_team_indx_tab_content{
+	margin-top:20px;
+}
+.btc_team_indx_slider_cont_main_wrapper{
+	margin-top:40px;
+}
+.btc_team_indx_img_wrapper img{
+	width:100%;
+}
+.pager_wrapper{
+	margin-top:80px;
+	text-align:center;
+}
+.pagination{
+	display:inline-block;
+	margin:0;
+	position:relative;
+}
+.pagination:after{
+	content: '';
+    border: 1px solid #e5e5e5;
+    width: 374px;
+    position: absolute;
+    left: 21px;
+    top: 24px;
+	z-index:1;
+}
+.pagination > li > a{
+	color:#000000;
+	font-weight:bold;
+	background:#ffffff;
+	font-size:16px;
+	text-transform:uppercase;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	width:50px;
+	height:50px;
+	line-height:36px;
+	text-align:center;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	border-radius:100%;
+	margin-right:20px;
+	border:1px solid #ffffff;
+	z-index:10;
+}
+.pagination > li:first-child > a{
+	width:50px;
+	height:50px;
+	line-height:36px;
+	font-weight:bold;
+	text-align:center;
+	font-size:16px;
+	color:#000000;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	border-radius:100%;
+	border:1px solid #ffffff;
+	margin-right:30px;
+	background:#222222;
+	color:#ffffff;
+	z-index:10;
+}
+.pagination > li:last-child > a{
+	width:50px;
+	height:50px;
+	line-height:36px;
+	font-weight:bold;
+	text-align:center;
+	font-size:16px;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	border-radius:100%;
+	border:1px solid #ffffff;
+	margin-left:10px;
+	background:#222222;
+	color:#ffffff;
+	z-index:10;
+}	
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    z-index: 2;
+    color: #fff;
+	border:1px solid #4169E1;
+    background-color: #4169E1;
+    border-color: none;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.pagination i:before{
+	margin-left:0;
+}
+/*-- btc team index Wrapper End --*/
+/**********---------------- TESM CSS END --------------****************/
+
+
+/**********---------------- SHOP CSS START --------------****************/
+/*-- btc Shop Wrapper Start --*/
+.btc_shop_indx_main_wrapper{
+	float:left;
+	width:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.gc_shop_indx_search_box p{
+	margin:0;
+	padding-top:15px;
+}
+.gc_shop_indx_search_box p span{
+	color:#4169E1;
+}
+.gc_shop_indx_view_tabs .nav > li > a{
+	width:50px;
+	height:50px;
+	    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    border: 1px solid #e5e5e5;
+    background: #ffffff;
+    color: #000000;
+	text-align:center;
+    line-height: 50px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 10;
+}
+.gc_shop_indx_view_tabs .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background: #4169E1;
+    position: relative;
+	color:#ffffff;
+}
+.gc_shop_indx_view_tabs .nav-pills > li > a:hover:after, .gc_shop_indx_view_tabs .nav-pills > li.active > a:after{
+	display:none;
+}
+.gc_shop_indx_view_tabs_pills{
+	margin-top:0;
+	float:right;
+}
+.gc_causes_select_box select{
+	width:100%;
+	height:50px;
+	border:1px solid #e5e5e5;
+	background:#ffffff;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	padding-left:20px;
+}
+.gc_causes_select_box i{
+	margin-left:-30px;
+}
+.btc_shop_indx_cont_box_wrapper{
+	float:left;
+	width:100%;
+	overflow:hidden;
+	margin-top:35px;
+}
+.btc_shop_indx_img_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_shop_indx_img_wrapper img{
+	 -webkit-border-top-left-radius: 20px;
+    -moz-border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+	width:100%;
+}
+.btc_shop_indx_img_cont_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+	border:1px solid #e5e5e5;
+	padding-top:45px;
+	padding-bottom:40px;
+	position:relative;
+}
+.btc_shop_indx_img_cont_wrapper h1{
+	font-size:20px;
+	color:#222222;
+	line-height: 26px;
+	padding-bottom:30px;
+}
+.orange{
+	color:#4169E1;
+}
+.btc_shop_price{
+	width:90px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	background:#4169E1;
+	color:#ffffff;
+	font-weight:bold;
+	 -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+	position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    top: -15px;
+}
+.btc_shop_bottom_social_wrapper{
+	float:left;
+	width:100%;
+	border-top:1px solid #e5e5e5;
+	background:#ffffff;
+	position: absolute;
+    bottom: -110px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_indx_cont_box_wrapper:hover .btc_shop_bottom_social_wrapper{
+	bottom:0;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_bottom_social_wrapper li a{
+	float:left;
+	width:33.33%;
+	height:60px;
+	font-size:20px;
+	line-height:60px;
+	text-align:center;
+	background:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_bottom_social_wrapper li a:hover{
+	background:#4169E1;
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_bottom_social_wrapper li:nth-child(2) a{
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+}
+.btc_shop_index_content_tabs_main{
+	margin-top:10px;
+}
+.btc_left_shop_sidebar_main_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_shop_searchbar_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_shop_searchbar_wrapper input{
+	width:calc(100% - 60px);
+	float:left;
+	height:50px;
+	border:2px solid #efefef;
+	border-right:0;
+	background:#ffffff;
+	padding-left:20px;
+	-webkit-border-top-left-radius: 50px;
+    -moz-border-top-left-radius: 50px;
+    border-top-left-radius: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+    -moz-border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.btc_shop_searchbar_wrapper button{
+	float:left;
+	width:60px;
+	height:50px;
+	background:#ffffff;
+	border:2px solid #efefef;
+	border-left:0;
+	-webkit-border-top-right-radius: 50px;
+    -moz-border-top-right-radius: 50px;
+    border-top-right-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+    -moz-border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.btc_shop_left_cate_wrapper{
+	float:left;
+	width:100%;
+	padding-top:45px;
+}
+.btc_shop_left_cate_wrapper h1{
+	font-size:30px;
+	color:#222222;
+	position:relative;
+}
+.btc_shop_left_cate_wrapper h1:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	bottom:-15px;
+	left:0;
+}
+.btc_shop_left_cate_wrapper ul{
+	margin-top:50px;
+}
+.btc_shop_left_cate_wrapper li{
+	margin-top:10px;
+}
+.btc_shop_left_cate_wrapper li:first-child{
+	margin-top:0;
+}
+.btc_shop_left_cate_wrapper li i{
+	color:#4169E1;
+	padding-right:7px;
+}
+.btc_shop_left_cate_wrapper li span{
+	color:#4169E1;
+	float:right;
+}
+.btc_shop_left_cate_wrapper li a{
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_left_cate_wrapper li a:hover{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_adver_img_main_wrapper{
+	float:left;
+	width:100%;
+	background:#4169E1;
+	margin-top:40px;
+	text-align:center;
+	padding-bottom:30px;
+}
+.btc_shop_adver_img_wrapper img{
+	width:100%;
+	-webkit-border-bottom-right-radius: 110px;
+    -moz-border-bottom-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+	-webkit-border-bottom-left-radius: 110px;
+    -moz-border-bottom-left-radius: 110px;
+    border-bottom-left-radius: 110px;
+}
+.btc_shop_adver_img_cont_wrapper h4{
+	font-size:20px;
+	font-family: 'Lato', sans-serif;
+	color:#ffffff;
+	text-transform:uppercase;
+	padding-top:20px;
+	font-weight:bold;
+}
+.btc_shop_adver_img_cont_wrapper p{
+	color:#ffffff;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding-top:5px;
+	margin:0;
+}
+.btc_shop_pagi a{
+	background:#f9f9f9 !important;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_pagi a:hover{
+	background:#4169E1 !important;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_indx_cont_list_box_wrapper{
+	float:left;
+	width:100%;
+	overflow:hidden;
+	margin-top:35px;
+}
+.btc_shop_list_img_wrapper{
+	width:270px;
+	float:left;
+}
+.btc_shop_list_img_cont_wrapper{
+	float:left;
+	width:calc(100% - 270px);
+	text-align:center;
+	border:1px solid #e5e5e5;
+	padding-top:45px;
+	padding-bottom:40px;
+	position:relative;
+}
+.btc_shop_list_img_cont_wrapper h1{
+	font-size:20px;
+	color:#222222;
+	line-height: 26px;
+	padding-bottom:30px;
+	padding-top: 17px;
+}
+.orange{
+	color:#4169E1;
+}
+.btc_shop_list_price{
+	display:inline-block;
+	width:90px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	background:#4169E1;
+	color:#ffffff;
+	font-weight:bold;
+	 -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.btc_shop_list_bottom_social_wrapper{
+	float:left;
+	width:100%;
+	border-top:1px solid #e5e5e5;
+	background:#ffffff;
+	position: absolute;
+    bottom: -110px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_indx_cont_list_box_wrapper:hover .btc_shop_list_bottom_social_wrapper{
+	bottom:0;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_list_bottom_social_wrapper li a{
+	float:left;
+	width:33.33%;
+	height:60px;
+	font-size:20px;
+	line-height:60px;
+	text-align:center;
+	background:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_list_bottom_social_wrapper li a:hover{
+	background:#4169E1;
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_shop_list_bottom_social_wrapper li:nth-child(2) a{
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+}
+/*-- btc Shop Wrapper End --*/
+/**********---------------- SHOP CSS END --------------****************/
+
+/**********---------------- SHOP SINGLE CSS START--------------****************/
+/*-- btc shop single product Wrapper Start --*/
+.btc_shop_single_product_main_wrapper{
+	float:left;
+	width:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.cc_ps_top_slider_section  .owl-theme .owl-dots{
+	display:none;
+}
+.cc_ps_top_slider_section  .owl-theme .owl-nav {
+	display:none;
+}
+.video_nav_img{
+	float:left;
+	width:22%;
+}
+.cc_ps_top_slider_section{
+	float:left;
+	width:calc(100% - 22%);
+}
+.video_nav_img .cc_ps_tabs{
+	margin-top:22px;
+}
+.magnify {
+	width: 420px; 
+	position: relative; 
+	cursor: none;
+}
+.large {
+	width: 175px;
+	height: 175px;
+	position: absolute;
+	border-radius: 100%;
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+	0 0 7px 7px rgba(0, 0, 0, 0.25), 
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+	display: none;
+}
+.small{ 
+	display: block;
+}
+.btc_shop_single_prod_right_section{
+	float:left;
+	width:100%;
+}
+.btc_shop_single_prod_right_section h1{
+	font-size:30px;
+	color:#222222;
+	position:relative;
+}
+.btc_shop_single_prod_right_section h1:after{
+	    content: '';
+    border: 1px solid #4169E1;
+    width: 30px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+.btc_shop_sin_pro_icon_wrapper{
+	float:left;
+	width:100%;
+	margin-top:45px;
+}
+.btc_shop_sin_pro_icon_wrapper p{
+	display:inline-block;
+	margin-left:20px;
+}
+.btc_shop_sin_pro_icon_wrapper p span{
+	color:#4169E1;
+	margin-left:20px;
+	position:relative;
+}
+.btc_shop_sin_pro_icon_wrapper p span:after{
+	content:'';
+	border:1px solid #797979;
+	width:1px;
+	height:10px;
+	position:absolute;
+	top: 7px;
+    left: -12px;
+}
+.btc_shop_sin_pro_icon_wrapper h5{
+	font-size:16px;
+	color:#797979;
+	font-family: 'Lato', sans-serif;
+	margin-top:20px;
+	line-height:23px;
+}
+.btc_shop_single_prod_right_section ul{
+	margin-top:20px;
+}
+.btc_shop_single_prod_right_section li:first-child{
+	margin-top:0;
+}
+.btc_shop_single_prod_right_section li{
+	margin-top:5px;
+}
+.btc_shop_single_prod_right_section li i{
+	color:#4169E1;
+	padding-right:10px;
+}
+.btc_shop_prod_quanty_bar{
+	float:left;
+	width:100%;
+	margin-top:30px;
+}
+.cc_ps_quan_heading_wrapper{
+	float:left;
+}
+.cc_ps_quantily_info input{
+	width:90px;
+	height:45px;
+	border:1px solid #eeeeee;
+	outline:none;
+	position:relative;
+	margin-left: 34px;
+	border-radius: 0;
+	border-left:0;
+	border-right:0;
+}
+.cc_ps_quantily_info input:focus{
+	border:none;
+	box-shadow:none;
+	border:1px solid #eeeeee;
+}
+.increase{
+	position:absolute;
+	left: 139px;
+    bottom: 0px;
+	background:#f9f9f9;
+	border:1px solid #eeeeee;
+	height:45px;
+	width:40px;
+	color:#d6d6d6;
+	border-left:0;
+}
+.decrease{
+	position:absolute;
+	left: 10px;
+    bottom: 0px;
+	background:#f9f9f9;
+	border:1px solid #eeeeee;
+	height:45px;
+	width:40px;
+	color:#d6d6d6;
+	border-right:0;
+}
+.cc_ps_second_border_Wrapper, .cc_ps_first_border_Wrapper{
+	float:left;
+	width:100%;
+	padding-bottom:40px;
+	border-bottom:1px solid #eeeeee;
+}
+.cc_ps_color_selectobx select{
+	float:right;
+	width:100%;
+	height:45px;
+	border:1px solid #eeeeee;
+	float:left;
+	margin-left:10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding-left:20px;
+}
+.cc_ps_color_selectobx i{
+	margin-left: -25px;
+	margin-top: 13px;
+}
+.btc_shop_product_price_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_shop_product_price_wrapper ul{
+	margin-top:40px;
+}
+.btc_shop_product_price_wrapper li{
+	float:left;
+	margin-left:20px;
+}
+.btc_shop_product_price_wrapper li:first-child{
+	margin-left:0;
+	font-size:26px;
+	font-weight:bold;
+	color:#4169E1;
+	margin-top:5px;
+}
+.btc_shop_product_price_wrapper li:last-child{
+	color:#0ee40e;
+}
+.cc_ps_cart_btn{
+	float:left;
+	width:100%;
+}
+.cc_ps_cart_btn ul{
+	margin-top:45px !important;
+}
+.cc_ps_cart_btn li{
+	float:left;
+	margin-top:0;
+}
+.cc_ps_cart_btn li:first-child a{
+	float:left;
+	width:180px;
+	height:50px;
+	background:#4169E1;
+	border:2px solid #4169E1;
+	color:#ffffff;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:50px;
+	    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.cc_ps_cart_btn li:first-child a:hover{
+	background:transparent;
+	border:2px solid #e5e5e5;
+	color:#000000;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.cc_ps_cart_btn li:nth-child(2) a{
+	float:left;
+	width:180px;
+	height:50px;
+	background:transparent;
+	border:2px solid #e5e5e5;
+	color:#000000;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:50px;
+	margin-left:10px;
+	    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.cc_ps_cart_btn li:nth-child(2) a:hover{
+	background:#4169E1;
+	border:2px solid #4169E1;
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.cc_ps_cart_btn li:last-child a{
+	float:left;
+	width:50px;
+	height:50px;
+	background:transparent;
+	border:2px solid #e5e5e5;
+	color:#000000;
+	text-align:center;
+	line-height:50px;
+	margin-left:10px;
+	    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.cc_ps_cart_btn li:last-child a:hover{
+	background:#4169E1;
+	border:2px solid #4169E1;
+	color:#000000;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.cc_ps_cart_btn li:last-child i{
+	padding-right:0;
+	color:#000000;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.cc_ps_cart_btn li:last-child a:hover i{
+	color:#ffffff;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc shop single product Wrapper End --*/
+/*-- btc shop single tabs Wrapper Start --*/
+.btc_shop_single_tabs_main_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_shop_single_tabs_wrapper .nav > li > a{
+	width:170px;
+	height:50px;
+	    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+	border:1px solid transparent;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.btc_shop_single_tabs_wrapper .nav > li > a:after{
+	display:none;
+}
+.btc_shop_single_tabs_content_main_wrapper .tab-content{
+	margin:0;
+}
+.btc_shop_single_tabs_content_main_wrapper{
+	border:1px solid #e5e5e5;
+	border-top:5px solid #4169E1;
+	margin-top: -5px;
+	padding:45px;
+	float:left;
+	width:100%;
+}
+.btc_shop_single_tabs_wrapper .nav-pills > li + li{
+	margin-left:0;
+}
+.btc_shop_single_tabs_img_wrapper{
+	float:left;
+	width:260px;
+}
+.btc_shop_single_tabs_img_content_wrapper{
+	float:left;
+	width:calc(100% - 260px);
+	padding-left:40px;
+}
+.btc_shop_single_tabs_img_content_bottom_wrapper{
+	float:left;
+	width:100%;
+	padding-top:40px;
+}
+.btc_shop_single_tabs_img_content_bottom_wrapper ul{
+	margin-top:35px;
+}
+.btc_shop_single_tabs_img_content_bottom_wrapper li{
+	margin-top:10px;
+}
+.btc_shop_single_tabs_img_content_bottom_wrapper li:first-child{
+	margin-top:0;
+}
+.btc_shop_single_tabs_img_content_bottom_wrapper li i{
+	color:#4169E1;
+	padding-right:10px;
+}
+/*-- btc shop single tabs Wrapper End --*/
+/*-- btc shop single product related Wrapper Start --*/
+.btc_shop_single_prod_related_wrapper{
+	float:left;
+	width:100%;
+	background:#f9f9f9;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_shop_single_prod_rela_slider .owl-theme .owl-nav .owl-prev, .btc_shop_single_prod_rela_slider .owl-theme .owl-nav .owl-next, .btc_shop_single_pro_related_cont_wrapper{
+	background:#ffffff;
+}
+/*-- btc shop single product related Wrapper End --*/
+/**********---------------- SHOP SINGLE CSS END --------------****************/
+
+
+/**********---------------- BLOG CATEGORIES CSS START --------------****************/
+/*-- btc blog Category Wrapper Start --*/
+.btc_blog_category_main_wrapper{
+	float:left;
+	width:100%;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_blog_cate_post_main_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_blog_cate_post_img_wrapper{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.btc_blog_cate_post_img_wrapper img{
+	width:100%;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.btc_blog_cate_date_wrapper{
+    width: 100px;
+    height: 100px;
+    background: #4169E1;
+    text-align: center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -50px;
+    right: 100px;
+    border: 12px solid #ffffff;
+}
+.btc_blog_cate_date_wrapper p{
+	font-size:24px;
+	color:#ffffff;
+	font-weight:bold;
+}
+.btc_blog_cate_date_wrapper ul{
+	padding-top:15px;
+}
+.btc_blog_cate_date_wrapper li:first-child{
+	font-size:24px;
+	color:#ffffff;
+	font-weight:bold;
+}
+.btc_blog_cate_date_wrapper li:last-child{
+	font-size:14px;
+	color:#ffffff;
+}
+.btc_blog_cate_cont_wrapper{
+	float:left;
+	width:100%;
+	background:#ffffff;
+	padding:40px;
+	padding-bottom:0;
+	border:1px solid #e5e5e5;
+	border-top:0;
+}
+.btc_blog_cate_cont_wrapper h5{
+	font-size:20px;
+	color:#222222;
+	line-height: 28px;
+}
+.btc_blog_cate_cont_wrapper p{
+	padding-top:30px;
+}
+.btc_blog_cate_cont_wrapper h4{
+	padding-top:20px;
+	padding-bottom:40px;
+}
+.btc_blog_cate_cont_wrapper h4 a{
+	font-size:16px;
+	font-weight:bold;
+	color:#4169E1;
+	font-family: 'Lato', sans-serif;
+	text-transform:uppercase;
+}
+.btc_blog_bottom_cate_cont_wrapper{
+	float:left;
+	width:100%;
+	border:1px solid #e5e5e5;
+	border-top:0;
+}
+.btc_blog_bottom_cont_small_box{
+	float:left;
+	width:25%;
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+}
+.btc_blog_bottom_cont_small_box p{
+	margin:0;
+}
+.btc_blog_bottom_cont_small_box p i{
+	color:#4169E1;
+	padding-right:5px;
+}
+.btc_blog_bottom_cont_small_box p a{
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_blog_bottom_cont_small_box p a:hover{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_blog_bottom_cont_small_box2{
+	border-left:1px solid #e5e5e5;
+}
+.btc_blog_bottom_cont_small_box3{
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+}
+.btc_blog_cate_post_main_wrapper_second{
+	margin-top:60px;
+}
+.btc_blog_cate_right_main_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_blog_cate_left_cate_wrapper{
+	border-bottom:1px solid #e5e5e5;
+	padding-bottom:40px;
+}
+.btc_blog_cate_right_social_wrapper{
+	float:left;
+	width:100%;
+	margin-top:40px;
+	padding-bottom:40px;
+	margin-bottom:40px;
+	border-bottom:1px solid #e5e5e5;
+}
+.btc_blog_cate_right_social_wrapper h1{
+	font-size:30px;
+	color:#222222;
+	position:relative;
+}
+.btc_blog_cate_right_social_wrapper h1:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	bottom:-15px;
+	left:0;
+}
+.btc_blog_cate_social_fb_wrapper{
+	float:left;
+	width:100%;
+	background:#39599f;
+	text-align:center;
+}
+.btc_blog_cate_social_fb_wrapper a{
+	display:inline-block;
+	color:#ffffff;
+	width:100%;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.btc_blog_cate_social_fb_wrapper a i{
+	font-size:20px;
+}
+.margin_top_fifte{
+	margin-top:50px;
+}
+.btc_blog_cate_social_tw_wrapper{
+	float:left;
+	width:100%;
+	background:#45b0e3;
+	text-align:center;
+}
+.btc_blog_cate_social_tw_wrapper a{
+	display:inline-block;
+	color:#ffffff;
+	width:100%;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.btc_blog_cate_social_tw_wrapper a i{
+	font-size:20px;
+}
+.btc_blog_cate_social_gp_wrapper{
+	float:left;
+	width:100%;
+	background:#f84e3f;
+	text-align:center;
+	margin-top:30px;
+}
+.btc_blog_cate_social_gp_wrapper a{
+	display:inline-block;
+	color:#ffffff;
+	width:100%;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.btc_blog_cate_social_gp_wrapper a i{
+	font-size:20px;
+}
+.btc_blog_cate_social_shair_wrapper{
+	float:left;
+	width:100%;
+	background:#9fdd7c;
+	text-align:center;
+	margin-top:30px;
+}
+.btc_blog_cate_social_shair_wrapper a{
+	display:inline-block;
+	color:#ffffff;
+	width:100%;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.btc_blog_cate_social_shair_wrapper a i{
+	font-size:20px;
+}
+.btc_blog_cate_client_slider_wrapper{
+	float:left;
+	width:100%;
+	padding-bottom:30px;
+	border-bottom:1px solid #e5e5e5;
+	margin-bottom:40px;
+}
+.btc_blog_cate_client_slider_wrapper  .owl-theme .owl-dots{
+	display:none;
+}
+.btc_blog_cate_client_slider_wrapper .owl-theme .owl-nav {
+    display:none;
+}
+.btc_blog_cate_client_slider_cont{
+	float:left;
+	width:100%;
+	text-align:center;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:40px;
+	padding-bottom:40px;
+	margin-top:50px;
+	border:1px solid #e5e5e5;
+}
+.btc_blog_client_headin_wrapper h1{
+	font-size:30px;
+	color:#222222;
+	position:relative;
+}
+.btc_blog_client_headin_wrapper h1:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	bottom:-15px;
+	left:0;
+}
+.btc_blog_cate_testi_quote_wrapper1{
+	position:relative;
+}
+.btc_blog_cate_testi_quote_wrapper1:after{
+	content:'';
+	border:1px solid #4169E1;
+	background:#4169E1;
+	width:12px;
+	height:25px;
+	position:absolute;
+	left:-23px;
+	right:0;
+	margin:0px auto;
+	top: 7px;
+}
+.btc_blog_cate_testi_quote_wrapper1:before{
+	content: '';
+    border-left: 12px solid transparent;
+    border-top: 12px solid #ffffff;
+    position: absolute;
+    margin-left:-17px;
+    margin-top:6px;
+    z-index: 1;
+}
+.btc_blog_cate_testi_quote_wrapper2{
+	position:relative;
+}
+.btc_blog_cate_testi_quote_wrapper2:after{
+	content:'';
+	border:1px solid #4169E1;
+	background:#4169E1;
+	width:12px;
+	height:25px;
+	position:absolute;
+	left:18px;
+	right:0;
+	margin:0px auto;
+	top: 7px;
+}
+.btc_blog_cate_testi_quote_wrapper2:before{
+	content: '';
+    border-left: 12px solid transparent;
+    border-top: 12px solid #ffffff;
+    position: absolute;
+    margin-left: 3px;
+    margin-top:6px;
+    z-index: 1;
+}
+.btc_blog_cate_client_slider_cont p{
+	padding-top:40px;
+}
+.btc_blog_trengle_cont_bottom_line{
+	position:relative;
+}
+.btc_blog_trengle_cont_bottom_line:before{
+	    content: '';
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 23px;
+    position: absolute;
+    left: 21px;
+    top: 38px;
+    -ms-transform: rotate(215deg);
+    -webkit-transform: rotate(215deg);
+    transform: rotate(215deg);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_blog_trengle_cont_bottom_line:after{
+	    content: '';
+    border: 1px solid #e5e5e5;
+    width: 1px;
+    height: 23px;
+    position: absolute;
+    left: 9px;
+    top: 39px;
+    ms-transform: rotate(326deg);
+    -webkit-transform: rotate(326deg);
+    transform: rotate(331deg);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_blog_trengle_cont_bottom_line_state{
+	position:relative;
+}
+.btc_blog_trengle_cont_bottom_line_state:before{
+	content: '';
+    border: 1px solid #ffffff;
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    left: 6px;
+    top: 40px;
+    z-index: 1;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_blog_cate_client_slider_wrapper .owl-carousel .owl-stage:after{
+	height:20px;
+}
+.btc_blog_cate_client_slider_img_wrapper{
+	float:left;
+	width:100%;
+	margin-top:40px;
+}
+.btc_blog_slider_img_width_divied{
+	float:left;
+	width:85px;
+}
+.btc_blog_slider_img_width_divied img{
+	    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	border:2px solid #e5e5e5;
+}
+.btc_blog_slider_img_cont_width_divied{
+	float:left;
+	width:calc(100% - 85px);
+	padding-left:20px;
+	padding-top:20px;
+}
+.btc_blog_slider_img_cont_width_divied p{
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+	position:relative;
+}
+.btc_blog_slider_img_cont_width_divied p:after{
+	content:'';
+	border:1px solid #4169E1;
+	position:absolute;
+	width:40px;
+	left:0;
+	top:-15px;
+}
+.btc_blog_post_headin_wrapper h1{
+	font-size:30px;
+	color:#222222;
+	position:relative;
+}
+.btc_blog_post_headin_wrapper h1:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	bottom:-15px;
+	left:0;
+}
+.gc_footer_ln_img_wrapper{
+	float:left;
+	width:80px;
+}
+.gc_footer_ln_cont_wrapper{
+	float:left;
+	width:calc(100% - 80px);
+	padding-left:20px;
+}
+.gc_footer_ln_cont_wrapper h4{
+	font-size:16px;
+	line-height:22px;
+}
+.gc_footer_ln_cont_wrapper h4 a{
+	color:#797979;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.gc_footer_ln_cont_wrapper h4 a:hover{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.gc_footer_ln_cont_wrapper p{
+	font-size:14px;
+	color:#797979;
+	margin: 0;
+    padding-top: 10px;
+}
+.gc_footer_ln_cont_wrapper p i{
+	color:#4169E1;
+	padding-right:5px;
+}
+.gc_footer_ln_main_wrapper{
+	float:left;
+	width:100%;
+	margin-top:50px;
+}
+.gc_footer_ln_main_wrapper2{
+	margin-top:30px;
+}
+.btc_blog_cate_right_recent_post_wrapper{
+	float:left;
+	width:100%;
+	padding-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+/*-- btc blog Category Wrapper End --*/
+/**********---------------- BLOG CATEGORIES CSS END --------------****************/
+
+
+/**********---------------- BLOG SINGLE CSS START --------------****************/
+.btc_blog_single_post_bottom_post_wrapper{
+	float:left;
+	width:100%;
+	padding-left: 80px;
+    padding-right: 25px;
+    border: 1px solid #e5e5e5;
+	margin-top:40px;
+	padding-bottom:30px;
+	position:relative;
+}
+.btc_blog_single_post_bottom_post_wrapper:after{
+	    content: '';
+    border: 2px solid #4169E1;
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    left: -2px;
+    top: 30px;
+}
+.btc_blog_single_post_quote_wrapper1{
+	position:relative;
+}
+.btc_blog_single_post_quote_wrapper1:after{
+	    content: '';
+    border: 1px solid #4169E1;
+    background: #4169E1;
+    width: 12px;
+    height: 25px;
+    position: absolute;
+    left: -50px;
+    top: 35px;
+}
+.btc_blog_single_post_quote_wrapper1:before{
+	    content: '';
+    border-left: 12px solid transparent;
+    border-top: 12px solid #ffffff;
+    position: absolute;
+    left: -50px;
+    top: 34px;
+    z-index: 1;
+}
+.btc_blog_single_post_quote_wrapper2{
+	position:relative;
+}
+.btc_blog_single_post_quote_wrapper2:after{
+	content: '';
+    border: 1px solid #4169E1;
+    background: #4169E1;
+    width: 12px;
+    height: 25px;
+    position: absolute;
+    left: -30px;
+    top: 35px;
+}
+.btc_blog_single_post_quote_wrapper2:before{
+	content: '';
+    border-left: 12px solid transparent;
+    border-top: 12px solid #ffffff;
+    position: absolute;
+    left: -30px;
+    top: 34px;
+    z-index: 1;
+}
+.btc_blog_single_post_bottom_post_wrapper h1{
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+	font-family: 'Lato', sans-serif;
+	margin-top:40px;
+}
+.btc_blog_single_post_tittle_wrapper{
+	float:left;
+	width:100%;
+	margin-top:40px;
+}
+.btc_blog_single_tittle_img_wrapper{
+	float:left;
+	width:300px;
+}
+.btc_blog_single_tittle_img_cont_wrapper{
+	float:left;
+	width:calc(100% - 300px);
+	padding-left:40px;
+}
+.btc_blog_single_tittle_img_cont_wrapper p{
+	padding-top:0;
+}
+.btc_blog_single_tittle_img_cont_wrapper_right{
+	padding-left:0;
+	padding-right:40px;
+	padding-bottom:60px;
+}
+.btc_blog_post_admin_main_wrapper{
+	float:left;
+	width:100%;
+	background:#1b1b1b;
+	overflow:hidden;
+	margin-top:60px;
+}
+.btc_blog_single_post_admin_img{
+	float:left;
+	width:170px;
+}
+.btc_blog_single_post_admin_img img{
+	-webkit-border-top-right-radius: 150px;
+    -moz-border-top-right-radius: 150px;
+    border-top-right-radius: 150px;
+	-webkit-border-bottom-right-radius: 150px;
+    -moz-border-bottom-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+	    margin-left: -30px;
+}
+.btc_blog_single_post_admin_img_cont{
+	float:left;
+	width:calc(100% - 170px);
+	padding-top:50px;
+	padding-right:30px;
+}
+.btc_blog_single_post_admin_img_cont h1{
+	font-size:26px;
+	color:#ffffff;
+}
+.btc_blog_single_post_admin_img_cont p{
+	color:rgba(255, 255, 255, 0.7803921568627451);
+	padding-top:25px;
+}
+.btc_blog_single_post_admin_img_cont ul{
+	margin-top:20px;
+}
+.btc_blog_single_post_admin_img_cont li{
+	float:left;
+	margin-left:10px;
+}
+.btc_blog_single_post_admin_img_cont li:first-child{
+	margin-left:0;
+}
+.btc_blog_single_post_admin_img_cont li a{
+	float:left;
+	width:50px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	color: rgba(255, 255, 255, 0.6509803921568628);
+    background: rgba(255, 255, 255, 0.14901960784313725);
+	-webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_blog_single_post_admin_img_cont li a:hover{
+	color: #ffffff;
+    background: #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.blog_comment1_wrapper{
+	margin-top:90px;
+	border-bottom:1px solid #f2f2f2;
+	padding-bottom:50px;
+}
+.blog_single_comment_heading h1{
+	font-size:30px;
+	color:#000000;
+	position:relative;
+	margin-top:60px;
+}
+.blog_single_comment_heading h1:after{
+    content: '';
+    border: 1px solid #4169E1;
+    width: 30px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}	
+.blog_comment1_img{
+	width:120px;
+	float:left;
+}
+.blog_comment1_cont{
+	width:calc(80% - 120px);
+	margin-left:150px;
+}
+.blog_single_comment_heading span{
+	color:#4169E1;
+}
+.blog_comment1_cont h3{
+	font-size:22px;
+	font-weight:bold;
+	padding-top:10px;
+}
+.blog_comment1_cont i{
+	font-size:15px;
+	color:#e8e8e8;
+	padding-left:10px;
+	padding-right:10px;
+}
+.blog_comment1_cont span{
+	color:#4169E1;
+	font-size:16px;
+	font-style: italic;
+}
+.blog_comment1_cont span a{
+	color:#4169E1;
+	text-decoration:underline;
+}
+.blog_comment1_cont p{
+	padding-top:5px;
+}
+.blog_comment2_wrapper{
+	margin-top:60px;
+	padding-bottom:50px;
+}
+.comment_cont2_border{
+	border-bottom:1px solid #f2f2f2;
+	float:left;
+	width:100%;
+}
+.blog_comment3_wrapper{
+	margin-top:60px;
+	border-bottom:1px solid #f2f2f2;
+	padding-bottom:50px;
+}
+.contect_form1 input{
+	width:100%;
+	height:50px;
+	padding-left:20px;
+	background:rgba(255, 255, 255, 0.08);
+	border:2px solid #f2f2f2;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.contect_form1 i, .contect_form2 i{
+	margin-left:-30px;
+	color:#4169E1;
+}
+.contect_form3 i{
+	margin-left:-30px;
+	color:#4169E1;
+	font-size:22px;
+}
+.contect_form4 i{
+	margin-left:-30px;
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+	top:-75px;
+}
+.contect_form1 input:hover, .contect_form1 input:focus, .contect_form2 input:hover, .contect_form2 input:focus{
+	border:2px solid #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.contect_form2 input{
+	width:100%;
+	height:50px;
+	padding-left:20px;
+	background:rgba(255, 255, 255, 0.08);
+	border:2px solid #f2f2f2;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.contect_form4 textarea{
+	width:100%;
+	margin-top:30px;
+	padding-left:20px;
+	padding-top:20px;
+	background:rgba(255, 255, 255, 0.08);
+	border:2px solid #f2f2f2;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	resize:none;
+}
+.contect_form4 textarea:hover, .contect_form4 textarea:focus{
+	border:2px solid #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.contect_btn ul{
+	padding:0;
+	list-style:none;
+	margin-top:40px;
+	float:left;
+}
+.contect_btn li a{
+	width:170px;
+	height:50px;
+	float:left;
+	color:#fff;
+	background:#4169E1;
+	text-align:center;
+	line-height:45px;
+	border-radius:50px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	letter-spacing:2px;
+	border:2px solid transparent;
+}
+.contect_btn li a:hover{
+	background:transparent;
+	border:2px solid #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	color:#000000;
+}
+.blog_contect_wrapper{
+	margin-top:60px;
+}
+/**********---------------- BLOG SINGLE CSS END --------------****************/
+
+/**********---------------- CONTACT CSS START --------------****************/
+/*-- btc contact tittle Wrapper Start --*/
+.btc_contact_tittle_main_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_contact_tittle_box_wrapper{
+	float:left;
+	width:100%;
+	display:inline-block;
+}
+.btc_contact_tittle_box_wrapper:hover .btc_step_icon_wrapper {
+    border: 2px dashed #4169E1;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_tittle_box_wrapper:hover .btc_step_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #4169E1;
+    opacity: 1;
+}
+.btc_contact_tittle_box_wrapper:hover .btc_step_hover_effect i:before {
+    color: #ffffff;
+    z-index: 100;
+    position: relative;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_tittle_contant_wrapper{
+	float:left;
+	width:100%;
+}
+.btc_contact_tittle_contant_wrapper h2{
+	font-size:20px;
+	font-weight:bold;
+	color:#000000;
+	padding-top:30px;
+}
+.btc_contact_tittle_contant_wrapper p{
+	margin:0;
+	padding-top:30px;
+}
+.btc_contact_tittle_contant_wrapper p a{
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_tittle_contant_wrapper p a:hover{
+	color:#4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*-- btc contact tittle Wrapper END --*/
+/*-- btc contact map Wrapper Start --*/
+.btc_contact_map_main_wrapper{
+	background:url('../images/content/contact_bg.jpg') 50% 0 repeat-y;
+	background-size:cover;
+	background-position:center 0;
+	background-repeat:no-repeat;
+	width:100%;
+	height:100%;
+	float:left;
+	position:relative;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.btc_contact_map_img_overlay{
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0%;
+	right:0%;
+	background:rgba(0,0,0,0.8);
+}
+.btc_contact_map_left_section{
+	float:left;
+	width:100%;
+}
+.btc_contact_map_right_section{
+	float:left;
+	width:100%;
+}
+.btc_contact_map_right_section h5{
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+	color:#4169E1;
+	text-transform:uppercase;
+}
+.btc_contact_map_right_section h3{
+	font-size:36px;
+	color:rgba(255, 255, 255, 0.9098039215686274);
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+.btc_contact_map_right_section span{
+	color:#4169E1;
+	font-size:22px;
+	position:relative;
+}
+.btc_contact_map_right_section span:after{
+	content:'';
+	border:1px solid #4169E1;
+	width:30px;
+	position:absolute;
+	left: 20px;
+    top: 13px;
+}
+.btc_contact_map_right_section p{
+	padding-top:20px;
+	padding-bottom:40px;
+}
+.btc_contact_map_inputs input{
+	width:100%;
+	height:50px;
+	background:#ffffff;
+	border:2px solid #ffffff;
+	padding-left:25px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_map_inputs input:hover, .btc_contact_map_inputs input:focus{
+	border:2px solid #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_map_inputs2{
+	margin-top:20px;
+}
+.btc_contact_map_inputs textarea{
+	width:100%;
+	background:#ffffff;
+	border:2px solid #ffffff;
+	padding-left:25px;
+	padding-top:10px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_map_inputs textarea:hover, .btc_contact_map_inputs textarea:focus{
+	border:2px solid #4169E1;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btc_contact_map_btn{
+	float:left;
+	width:100%;
+}
+.btc_contact_map_btn ul{
+	margin-top:30px;
+}
+.btc_contact_map_btn li a{
+    float: left;
+    width: 200px;
+    height: 50px;
+    background: #4169E1;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+	text-transform:uppercase;
+    border: 1px solid transparent;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}	
+.btc_contact_map_btn li a:hover{
+	    background: transparent;
+    border: 1px solid #4169E1;
+    color: #4169E1;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+}
+/*-- btc contact map Wrapper End --*/
+/**********---------------- CONTACT CSS END --------------****************/

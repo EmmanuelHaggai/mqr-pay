@@ -1,0 +1,559 @@
+@media(min-width: 767px) and (max-width: 991px){
+	.gc_logo{
+		float:none;
+		display:inline-block;
+	}
+	.hidden-menu-bar .mainmenu{
+		float:none;
+	}
+	.gc_right_menu > ul > li{
+		z-index:100;
+	}
+	.btc_left_top_header_wrapper p, .btc_right_top_header_wrapper li a, .btc_right_top_header_wrapper ul li:last-child p, .btc_right_top_header_wrapper ul li:last-child .ss_opener span{
+		font-size:11px;
+	}
+	.btc_currency_box1, .btc_currency_box2, .btc_currency_box3, .btc_currency_box4{
+		width:50%;
+	}
+	.btc_currency_box1, .btc_currency_box2, .btc_currency_box3{
+		border:0;
+	}
+	.btc_currency_box3, .btc_currency_box4{
+		margin-top:50px;
+	}
+	.btc_currency_box1{
+		text-align:center;
+	}
+	.btc_currency_box1 h5{
+		text-align:center;
+		padding-left:20px;
+	}
+	.btc_right_top_header_wrapper li a{
+		padding: 20px 5px 20px 30px;
+	}
+	.btc_right_top_header_wrapper li:nth-child(2):after{
+		right:-8px;
+	}
+}
+@media (max-width: 860px){
+	.mainmenu ul li a{
+		font-size:14px;
+		padding: 10px 14px 47px 10px;
+	}
+}
+@media (max-width: 1199px) and (min-width: 991px){
+	.mainmenu ul li a{
+		font-size:14px;
+		padding: 10px 14px 47px 10px;
+	}
+	.btc_join_navi_btn a{
+		width:120px;
+	}
+	.btc_newsletter_text h1{
+		font-size:26px;
+		padding-top: 7px;
+	}
+	.btc_sell_right_side_wrapper img{
+		margin-top:76px;
+	}
+}
+@media (max-width: 550px){
+	#ticker li{
+		width:50%;
+	}
+}
+@media (max-width: 400px){
+	#ticker li{
+		width:100%;
+	}
+}
+@media (max-width: 1400px){
+	.btc_topheader_welcome_pera{
+		display:none !important;
+	}
+}
+@media (min-width: 1400px) and (max-width: 1500px){
+	.btc_right_top_header_wrapper li{
+		font-size:14px;
+	}
+}
+@media (max-width: 991px){
+	.btc_steps_bottom_line_wrapper:after{
+		display:none;
+	}
+	.btc_steps_main_box_wrapper3, .btc_steps_main_box_wrapper4{
+		margin-top:50px;
+	}
+	.btc_video_left_wrapper, .btc_video_right_wrapper{
+		width:100%;
+	}
+	.btc_video_right_wrapper ul{
+		float:left;
+		margin-top: 30px;
+	}
+	.btc_newsletter_field{
+		margin-top:30px;
+	}
+	.btc_newsletter_field i{
+		top:47px;
+	}
+	.btc_footer_logo_right:after{
+		display:none;
+	}
+	.btc_bottom_footer_main_wrapper{
+		text-align:center;
+	}
+	.btc_right_top_header_wrapper li:nth-child(2):before{
+		display:none;
+	}
+	.btc_team_slider_wrapper .owl-theme .owl-nav{
+		left: -224px !important;
+		top: 331px !important;
+	}
+	.btc_contact_main_wrapper{
+		padding-bottom:100px;
+	}
+	.btc_slider_left_border:before{
+		display:none;
+	}
+	.btc_slider_left_border:after{
+		display:none;
+	}
+	.btc_calc_img_overlay{
+		position:absolute;
+		top:0%;
+		left:0%;
+		right:0%;
+		bottom:0%;
+		background:#ffffffd9;
+	}
+	.cryptonatorwidget{
+		width:100% !important;
+	}
+	.cryptonatorwidget input, .cryptonatorwidget select{
+		border:1px solid #ff880e !important;
+	}
+	.btc_sell_right_side_wrapper img{
+		display:none !important;
+	}
+	.btc_team_main_wrapper{
+		padding-top:100px;
+	}
+	.btc_team_left_wrapper{
+		padding-top:0;
+	}
+	.btc_about_currency_box1, .btc_about_currency_box2, .btc_about_currency_box3, .btc_about_currency_box4{
+		width:20%;
+	}
+	.btc_left_shop_sidebar_main_wrapper{
+		margin-top:60px;
+	}
+	.btc_shop_single_prod_right_section{
+		margin-top:60px;
+	}
+	.btc_blog_cate_right_main_wrapper{
+		margin-top:60px;
+	}
+	.btc_contact_map_right_section{
+		margin-top:60px;
+	}
+	.btc_contact_map_inputs3{
+		margin-top:20px;
+	}
+	.divider_30{
+		width:100%;
+	}
+}
+@media (max-width: 1900px){
+	.btc_slider_left_border:before{
+		height:100px;
+	}
+}
+@media (max-width: 480px){
+	.nav-pills > li{
+		float:none;
+	}
+	.nav-pills > li + li{
+		margin-left:0;
+		margin-top:30px;
+		float:left;
+	}
+	.nav-pills > li > a:hover:after{
+		left:77px;
+	}
+	.btc_contact_form_box{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.btc_newsletter_text h1{
+		font-size:26px;
+		padding-top: 6px;
+	}
+	.btc_newsletter_field input{
+		float:none;
+		width:100%;
+	}
+	.btc_newsletter_field button{
+		float:none;
+		margin-top:30px;
+	}
+	.cryptonatorwidget select{
+		padding:0 !important;
+	}
+	#ticker li{
+		width:50% !important;
+	}
+	.full_width{
+		width:100%;
+	}
+	.btc_tittle_main_wrapper{
+		text-align:center;
+	}
+	.btc_tittle_right_cont_wrapper ul{
+		float:none;
+		display:inline-block;
+		margin-top:20px;
+	}
+	.btc_tittle_left_heading h1{
+		margin-top:0;
+	}
+	.btc_third_pegi, .pagination:after{
+		display:none !important;
+	}
+	.pagination > li:first-child > a, .pagination > li > a{
+		margin-right:10px;
+	}
+	.pagination > li:last-child > a{
+		margin-left:0;
+	}
+	.gc_shop_indx_view_tabs .nav-pills > li{
+		float:left !important;
+	}
+	.gc_shop_indx_view_tabs .nav-pills > li + li{
+		float:left !important;
+		margin-left:20px;
+		margin-top:0;
+	}
+	.cc_ps_cart_btn li:nth-child(2){
+		float:none !important;
+	}
+}
+@media (max-width: 580px){
+	.btc_currency_box1, .btc_currency_box2, .btc_currency_box3, .btc_currency_box4{
+		width:50%;
+	}
+	.btc_currency_box1, .btc_currency_box2, .btc_currency_box3{
+		border:0;
+	}
+	.btc_currency_box3, .btc_currency_box4{
+		margin-top:50px;
+	}
+	.btc_partner_slider_wrapper .owl-theme .owl-nav{
+		top:-80px;
+		left:0;
+		right:0;
+	}
+	.btc_partner_slider_wrapper{
+		margin-top:100px;
+	}
+	.btc_currency_box1{
+		text-align:center;
+	}
+	.btc_currency_box1 h5{
+		text-align:center;
+		padding-left:20px;
+	}
+	.btc_about_currency_box1, .btc_about_currency_box2, .btc_about_currency_box3, .btc_about_currency_box4{
+		display:block;
+		float:left;
+		width:50%;
+		border-right:0;
+	}
+	.btc_about_currency_box3, .btc_about_currency_box4{
+		margin-top:50px;
+	}
+	.btc_shop_list_img_wrapper, .btc_shop_list_img_cont_wrapper{
+		float:none;
+		width:100%;
+	}
+	.btc_shop_list_img_wrapper img{
+		width:100%;
+	}
+	.btc_shop_single_slider_nav{
+		float:none;
+		width:100%;
+		position:relative;
+	}
+	.btc_shop_single_slider_img{
+		float:none;
+		width:100%;
+	}
+	.visible_580{
+		display:none;
+	}
+	#slider-nav a{
+		width:100px;
+		height:110px;
+		display:inline-block;
+	}
+	#slider-wrapper{
+		height:380px;
+	}
+	#slider-nav{
+		text-align:left;
+	}
+	.full_width{
+		width:100%;
+	}
+	.decrease{
+		left:25px;
+	}
+	.cc_ps_quantily_info input{
+		margin-left:50px;
+	}
+	.increase{
+		left:155px;
+	}
+	.cc_ps_color_selectobx{
+		margin-top:20px;
+	}
+	.cc_ps_cart_btn li:first-child a{
+		display:inline-block;
+	}
+	.cc_ps_cart_btn li:nth-child(2) a{
+		display:inline-block;
+	}
+	.btc_blog_bottom_cont_small_box p a{
+		font-size:16px;
+	}
+	.btc_blog_bottom_cont_small_box{
+		width:50%;
+	}
+	.btc_blog_bottom_cont_small_box3, .btc_blog_bottom_cont_small_box4{
+		border-top:1px solid #e5e5e5;
+	}
+	.btc_blog_single_post_admin_img{
+		display:none;
+	}
+	.btc_blog_single_post_admin_img_cont{
+		float:float;
+		width:100%;
+		padding:50px;
+	}
+}
+@media (min-width: 580px){
+	.hidden_580{
+		display:none;
+	}
+}
+@media (max-width: 1199px){
+	.btc_sell_left_side_wrapper{
+		float:none;
+		width:100%;
+	}	
+	.btc_sell_right_side_wrapper{
+		float:none;
+		width:100%;
+	}
+	.btc_footer_logo_left{
+		float:none;
+		width:100%;
+	}
+	.btc_footer_logo_right{
+		float:none;
+		width:100%;
+	}
+	.btc_footer_email_wrapper{
+		float:none;
+		width:100%;
+	}
+	.btc_footer_social_wrapper{
+		float:none;
+		width:100%;
+	}
+	.btc_footer_logo_right:after {
+		content: '';
+		border: 1px solid #797979;
+		width: 1px;
+		height: 110px;
+		position: absolute;
+		right: -60px;
+		top: -70px;
+	}
+	.btc_footer_social_wrapper ul {
+		float: left;
+		margin-top: 10px;
+	}
+	.btc_footer_social_wrapper li:first-child{
+		margin-left:0;
+	}
+	.btc_team_slider_wrapper .owl-theme .owl-nav{
+		left: -288px;
+		top: 310px;
+	}
+	.btc_slider_left_border:after{
+		left:-50px;
+	}
+}
+@media (max-width: 767px){
+	#quote-carousel .carousel-indicators:after, #quote-carousel .carousel-indicators:before, .btc_center_line:before, .btc_center_line:after{
+		display:none;
+	}
+	.carousel-indicators{
+		width:100%;
+	}
+	.carousel-inner{
+		width:100%;
+	}
+	#quote-carousel .carousel-indicators{
+		top:0;
+	}
+	.btc_right_top_header_wrapper{
+		display:none;
+	}
+	.btc_left_top_header_wrapper{
+		width:100%;
+	}
+	.btc_steps_main_box_wrapper2{
+		margin-top:50px;
+	}
+	.nav > li > a{
+		width:180px;
+	}
+	.nav-pills > li.active > a:after{
+		left:77px;
+	}
+	.btc_currency_main_wrapper{
+		background:#161616;
+	}
+	.btc_team_left_wrapper{
+		width:100%;
+		display:inline-block;
+	}
+	.btc_team_right_wrapper{
+		width:100%;
+	}
+	.btc_team_main_wrapper{
+		text-align:center;
+	}
+	.btc_team_slider_wrapper{
+		margin-top:50px;
+	}
+	.btc_team_left_wrapper p {
+		padding-top: 20px;
+	}
+	.btc_footer_main_wrapper{
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+	.btc_email_footer{
+		margin-top:10px;
+	}
+	.btc_footer_social_wrapper ul{
+		margin-top:20px !important;
+	}
+	#ticker{
+		position:relative !important;
+		width:auto;
+		padding-top: 5px;
+	}
+	#ticker_window{
+		background:transparent;
+		padding-left:0;
+		text-align:center;
+		width:100%;
+	}
+	#ticker li{
+		width:33.33%;
+	}
+	.header-area{
+		padding-top:0;
+	}
+	.gc_main_menu_wrapper{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#toggle{
+		bottom:-20px;
+	}
+	.btc_team_slider_wrapper .owl-theme .owl-nav{
+		top:30% !important;
+		left:0 !important;
+	}
+	.btc_team_slider_wrapper .owl-theme .owl-nav .owl-next{
+		left:100%;
+		margin-left: -50px;
+	}
+	.btc_ser_indx_box_wrapper img{
+		width:100%;
+	}
+	.pagination:after{
+		width:300px;
+	}
+	.gc_shop_indx_view_tabs_pills{
+		float:none;
+		margin-top:30px;
+	}
+	.gc_shop_indx_select_box_wrapper{
+		margin-top:30px;
+	}
+	.video_nav_img{
+		width:100%;
+		float:none;
+	}
+	.cc_ps_top_slider_section{
+		width:100%;
+		float:none;
+	}
+	.btc_shop_single_tabs_wrapper .nav-pills > li + li{
+		float:none;
+	}
+	.btc_shop_single_tabs_img_wrapper{
+		width:100%;
+		float:none;
+	}
+	.btc_shop_single_tabs_img_content_wrapper{
+		width:100%;
+		float:none;
+		padding-left:0;
+		padding-top:30px;
+	}
+	.btc_blog_single_tittle_img_wrapper{
+		float:none;
+		width:100%;
+	}
+	.btc_blog_single_tittle_img_cont_wrapper{
+		float:none;
+		width:100%;
+		margin-top:40px;
+		padding-left:0;
+	}
+	.contect_form2{
+		margin-top:30px;
+	}
+	.btc_contact_tittle_box_wrapper2{
+		margin-top:60px;
+	}
+}
+@media (max-width: 380px){
+	.btc_testi_quote_wrapper2:after, .btc_testi_quote_wrapper2:before, .btc_testi_quote_wrapper1:after, .btc_testi_quote_wrapper1:before{
+		display:none;
+	}
+	.btc_testi_padding_zero{
+		padding-left:0;
+	}
+	#sidebar{
+		width:300px;
+	}
+	#ticker li{
+		width:100% !important;
+	}
+	#scroll{
+		right:0;
+	}
+}
+@media (max-width: 680px){
+	.btc_blog_bottom_cont_small_box p a{
+		font-size:12px;
+	}
+}
